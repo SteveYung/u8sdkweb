@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta content="width=device-width, initial-scale=1.0" name="viewport">
+		<meta content="ie=edge" http-equiv="X-UA-Compatible">
+		<link rel="stylesheet" type="text/css" href="../../bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="../../font-awesome/css/font-awesome.css" />
+		<link href="../../layui/css/layui.css" rel="stylesheet">
+		<link href="http://typesdk/css/css.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="../css/pack.css" />
+		<title>打包-选择渠道</title>
+	</head>
+
+	<body>
+		<div id="start_packing">
+
+			<blockquote class="layui-elem-quote">
+				SDK打包管理系统
+			</blockquote>
+
+			<fieldset class="layui-elem-field">
+				<legend>打包流程</legend>
+				<div class="layui-field-box dblc">
+					<div class="layui-row">
+						<div class="layui-progress">
+							<div class="layui-progress-bar" lay-percent="60%" style="height:100%"></div>
+						</div>
+						<div class="layui-col-md2 dblc_sub">
+							<span class="step_no">1</span>
+							<span class="vertical">选择游戏</span>
+						</div>
+						<div class="layui-col-md2 dblc_sub">
+							<span class="step_no">2</span>
+							<span class="vertical">选择平台</span>
+						</div>
+						<div class="layui-col-md2 dblc_sub">
+							<span class="step_no">3</span>
+							<span class="vertical">选择项目</span>
+						</div>
+						<div class="layui-col-md2 dblc_sub">
+							<span class="step_no">4</span>
+							<span class="vertical">选择渠道</span>
+						</div>
+						<div class="layui-col-md2 dblc_sub">
+							<span class="step_no">5</span>
+							<span class="vertical">确认任务</span>
+						</div>
+						<div class="layui-col-md2 dblc_sub">
+							<span class="step_no">6</span>
+							<span class="vertical">开始打包</span>
+						</div>
+					</div>
+					<div class="pack3">
+						<div class="demoTable" style="text-align: right;">
+							搜索ID：
+							<div class="layui-inline">
+								<input class="layui-input" name="id" id="demoReload" autocomplete="off">
+							</div>
+							<button class="layui-btn" data-type="reload">搜索</button>
+						</div>
+						<table class="layui-hide" id="LAY_table_user" lay-filter="user"></table>
+
+						<div class="packBtn row text-center">
+							<a href="pack02.html" class="btn btn-primary">上一步</a>
+							<a href="pack05.html" class="btn btn-primary">下一步</a>
+						</div>
+					</div>
+				</div>
+			</fieldset>
+
+		</div>
+		<script src="http://typesdk/js/jquery-3.1.1.min.js"></script>
+		<script src="http://typesdk/layui/layui.js"></script>
+		<script src="http://typesdk/layui/js.js"></script>
+		<script type="text/javascript">
+			layui.use('table', function() {
+				var table = layui.table;
+			
+				//方法级渲染
+				table.render({
+					elem: '#LAY_table_user',
+					url: '/typesdk/public/jsop/user.json',
+					cols: [
+						[{
+							checkbox: true,
+							fixed: true
+						}, {
+							field: 'id',
+							title: 'ID',
+							width: 80,
+							sort: true,
+							fixed: true
+						}, {
+							field: 'username',
+							title: '用户名',
+							width: 80
+						}, {
+							field: 'sex',
+							title: '性别',
+							width: 80,
+							sort: true
+						}, {
+							field: 'city',
+							title: '城市',
+							width: 80
+						}, {
+							field: 'sign',
+							title: '签名'
+						}, {
+							field: 'experience',
+							title: '积分',
+							sort: true,
+							width: 80
+						}, {
+							field: 'score',
+							title: '评分',
+							sort: true,
+							width: 80
+						}, {
+							field: 'classify',
+							title: '职业',
+							width: 80
+						}, {
+							field: 'wealth',
+							title: '财富',
+							sort: true,
+							width: 135
+						}]
+					],
+					id: 'testReload',
+					page: true,
+					height: 315
+				});
+			
+				var $ = layui.$,
+					active = {
+						reload: function() {
+							var demoReload = $('#demoReload');
+							//执行重载
+							table.reload('testReload', {
+								page: {
+									curr: 1 //重新从第 1 页开始
+								},
+								where: {
+									key: {
+										id: demoReload.val(),
+										keyword: demoReload.val()
+									}
+								}
+							});
+						}
+					};
+			
+				$('.demoTable .layui-btn').on('click', function() {
+					var type = $(this).data('type');
+					active[type] ? active[type].call(this) : '';
+					
+					console.log($(this).data('type'))
+				});
+			});
+		</script>
+	</body>
+</html>

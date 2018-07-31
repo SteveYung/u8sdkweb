@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>渠道管理</title>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <link href="/css/font-awesome.css" rel="stylesheet">
+    <link href='{{url_for("static", filename="layui/css/layui.css")}}' rel="stylesheet">
+</head>
+<style>
+    .channel {
+        width: 98vw;
+    }
+</style>
+
+<body>
+    <div class="channel">
+        <table class="layui-table" lay-data="{ url:'/channelCurrency',id:'idTest',page:true}" lay-filter="demo">
+            <thead>
+                <tr>
+                    <th lay-data="{field:'name', width:100, sort: true, edit: 'text'}">渠道英文缩写</th>
+                    <th lay-data="{field:'pluginsName', width:100,sort: true, edit: 'text'}">脚本变量</th>
+                    <th lay-data="{field:'paramskey1', width:100, edit: 'text'}">key1</th>
+                    <th lay-data="{field:'paramskey2', width:100, edit: 'text'}">key2</th>
+                    <th lay-data="{field:'paramskey3', width:100, edit: 'text'}">key3</th>
+                    <th lay-data="{field:'paramskey4', width:100, edit: 'text'}">key4</th>
+                    <th lay-data="{field:'paramskey5', width:100, edit: 'text'}">key5</th>
+                    <th lay-data="{field:'paramskey6', width:100, edit: 'text'}">key6</th>
+                    <th lay-data="{field:'paramskey7', width:100, edit: 'text'}">key7</th>
+                    <th lay-data="{field:'paramskey8', width:100, edit: 'text'}">key8</th>
+                    <th lay-data="{field:'paramskey9', width:100, edit: 'text'}">key9</th>
+                    <th lay-data="{fixed: 'right', width:200, align:'center', toolbar: '#barDemo'}">操作</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+
+    <!--channel-->
+    <script src='{{url_for("static", filename="js/jquery-3.1.1.min.js")}}' charset="utf-8"></script>
+    <script src='{{url_for("static", filename="layui/layui.js")}}' charset="utf-8"></script>
+    <script type="text/html" id="barDemo">
+        <a class="layui-btn layui-btn-xs" lay-event="edit">
+            <i class="fa fa-edit mr5"></i>更新
+        </a>
+        <!-- <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">
+            <i class="fa fa-trash-o mr5"></i>删除
+        </a> -->
+        <a class="layui-btn layui-btn-primary layui-btn-xs" lay-event="detail">
+            <i class="fa fa-hand-paper-o mr5"></i>参数配置
+        </a>
+    </script>
+    <script>
+        var game = '{{game}}'
+        layui.use('table', function() {
+            var table = layui.table;
+            //监听工具条
+            table.on('tool(demo)', function(obj) {
+                var data = obj.data,
+                    dataa = {
+                        name: data.name,
+                        pluginsName: data.pluginsName,
+                        paramskey1: data.paramskey1,
+                        paramskey2: data.paramskey2,
+                        paramskey3: data.paramskey3,
+                        paramskey4: data.paramskey4,
+                        paramskey5: data.paramskey5,
+                        paramskey6: data.paramskey6,
+                        paramskey7: data.paramskey7,
+                        paramskey8: data.paramskey8,
+                        paramskey9: data.paramskey9,
+                        subb: 'channel_currency',
+                        sign: data.sign
+                    };
+                if (obj.event === 'detail') {
+                    (dataa.name) ? (window.location.href = "/configuration/" + game + '/' + data.name) : layer.msg('这个渠道名字都没有？');;
+                } else if (obj.event === 'upup') {
+                    (dataa.name) ? updata_post(dataa, 'channelupdata'): layer.msg('这个渠道名字都没有？');
+                } else if (obj.event === 'edit') {
+                    (dataa.name) ? updata_post(dataa, 'channelmodify'): layer.msg('这个渠道名字都没有？');
+                }
+            });
+        });
+        setTimeout(function() {
+            //加载完成后就显示添加栏目
+            buttonup('channel');
+        }, 1000)
+
+        function buttonup(uploadtt) {
+            var oBtn = document.querySelectorAll('.' + uploadtt + ' .layui-form .layui-table-box .layui-table-body .layui-table tbody tr');
+            var htmla = '<td data-field="name" data-edit="text"><div class="layui-table-cell laytable-cell-1-name"></div></td><td data-field="pluginsName" data-edit="text"><div class="layui-table-cell laytable-cell-1-pluginsName"></div></td><td data-field="paramskey1" data-edit="text"><div class="layui-table-cell laytable-cell-1-paramskey1"></div></td><td data-field="paramskey2" data-edit="text"><div class="layui-table-cell laytable-cell-1-paramskey2"></div></td><td data-field="paramskey3" data-edit="text"><div class="layui-table-cell laytable-cell-1-paramskey3"></div></td><td data-field="paramskey4" data-edit="text"><div class="layui-table-cell laytable-cell-1-paramskey4"></div></td><td data-field="paramskey5" data-edit="text"><div class="layui-table-cell laytable-cell-1-paramskey5"></div></td><td data-field="paramskey6" data-edit="text"><div class="layui-table-cell laytable-cell-1-paramskey6"></div></td><td data-field="paramskey7" data-edit="text"><div class="layui-table-cell laytable-cell-1-paramskey7"></div></td><td data-field="paramskey8" data-edit="text"><div class="layui-table-cell laytable-cell-1-paramskey8"></div></td><td data-field="paramskey9" data-edit="text"><div class="layui-table-cell laytable-cell-1-paramskey9"></div></td><td data-field="11" align="center" data-off="true"><div class="layui-table-cell laytable-cell-1-11"><a class="layui-btn layui-btn-xs" lay-event="upup"><i class="fa fa-edit mr5"></i>添加</a></div></td>';
+            oBtn[((oBtn.length) / 2) - 1].innerHTML = htmla
+        }
+
+        function updata_post(dataa, uurl) {
+            $.post("/" + uurl, dataa,
+                function(data, status) {
+                    if (data == 'True' && status == 'success') {
+                        window.location.reload()
+                    } else {
+                        layer.msg(data);
+                    }
+                });
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+#index .layui-nav-item .layui-icon {
+    font-size: 20px;
+    margin: 5px;
+}
+
+#index .layui-header .layui-nav .layui-nav-item a {
+    color: #000;
+}
+
+#index .layui-nav .layui-nav-item {
+    float: right;
+}
+
+#index .layui-layout-admin .layui-side {
+    margin-top: 60px;
+    top: 0px;
+    z-index: 9999;
+}
+
+#index .layui-header {
+    box-shadow: 0px 2px 2px rgb(209, 209, 209);
+}
+
+#index .layui-body {
+    left: 230px;
+    padding-right: 40px;
+}
+
+#index .layui-nav .logo {
+    margin: 10px;
+}
+
+#index .layui-nav .explain {
+    position: absolute;
+    left: 200px;
+    margin: 10px;
+}
+
+@font-face {
+    font-family: 'iconfont';
+    /* project id 527379 */
+    src: url('//at.alicdn.com/t/font_527379_cpzztfz6wdgnl8fr.eot');
+    src: url('//at.alicdn.com/t/font_527379_cpzztfz6wdgnl8fr.eot?#iefix') format('embedded-opentype'), url('//at.alicdn.com/t/font_527379_cpzztfz6wdgnl8fr.woff') format('woff'), url('//at.alicdn.com/t/font_527379_cpzztfz6wdgnl8fr.ttf') format('truetype'), url('//at.alicdn.com/t/font_527379_cpzztfz6wdgnl8fr.svg#iconfont') format('svg');
+}
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}

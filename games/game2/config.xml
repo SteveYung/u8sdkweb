@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<xml>
+
+	<channels>			
+
+		<channel>
+			<param name="id" value="12" />
+			<param name="name" value="baidu" />
+			<param name="sdk" value="baidu" />
+			<param name="desc" value="Baidu SDK" />
+			<param name="suffix" value="com.morefun.xsanguo.baidu" />	
+			<param name="splash" value="0" />
+			<param name="splash_copy_to_unity" value="0" />
+			<param name="icon" value="rb" />
+
+			<sdk-params>
+				<param name="AppID" value="6139095" />
+				<param name="AppKey" value="LghT4yGqKHXmiHxAgZnNDbYy" />
+				<param desc="是否为调试模式(RELEASE|DEBUG)" name="Domain" value="RELEASE" />
+				<param desc="百度模式(0:百度;1:多酷;2:91)" name="BDPlatformType" value="0" />				
+			</sdk-params>
+
+
+
+			<sdk-version>
+				<versionCode>1</versionCode>   
+				<versionName>3.2.0</versionName>
+			</sdk-version>			
+
+		</channel>
+
+
+		</channels>
+
+</xml>

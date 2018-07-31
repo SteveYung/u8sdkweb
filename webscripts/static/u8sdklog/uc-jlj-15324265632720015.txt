@@ -1,0 +1,466 @@
+2018-07-24 18:01:31,741: now to package uc...
+2018-07-24 18:01:31,742: 
+
+2018-07-24 18:02:28,968: 
+*******CMD*******
+
+2018-07-24 18:02:28,969: 
+
+2018-07-24 18:02:28,969: java -jar /mnt/hgfs/U8/U8SDKTool-Win-lanmao/tool/liunx/apktool.jar d /mnt/hgfs/U8/U8SDKTool-Win-lanmao/workspace/jlj/uc/temp.apk -f -o /mnt/hgfs/U8/U8SDKTool-Win-lanmao/workspace/jlj/uc/decompile
+2018-07-24 18:02:28,969: 
+
+2018-07-24 18:02:28,970: 
+
+2018-07-24 18:02:28,970: 
+
+2018-07-24 18:02:28,970: I: Using Apktool 2.3.3 on temp.apk
+I: Loading resource table...
+I: Decoding AndroidManifest.xml with resources...
+S: WARNING: Could not write to (/root/.local/share/apktool/framework), using /tmp instead...
+S: Please be aware this is a volatile directory and frameworks could go missing, please utilize --frame-path if the default storage directory is unavailable
+I: Loading resource table from file: /tmp/1.apk
+I: Regular manifest package...
+I: Decoding file-resources...
+I: Decoding values */* XMLs...
+I: Baksmaling classes.dex...
+I: Copying assets and libs...
+I: Copying unknown files...
+I: Copying original files...
+2018-07-24 18:02:28,970: 
+
+2018-07-24 18:02:28,970: 
+*******************
+
+2018-07-24 18:02:28,971: 
+
+2018-07-24 18:02:28,971: now to check split dex ... 
+2018-07-24 18:02:28,971: 
+
+2018-07-24 18:02:28,973: the new package name is com.hslm.jlj.aligames
+2018-07-24 18:02:28,974: 
+
+2018-07-24 18:02:28,975: the channel uc has no supported plugins.
+2018-07-24 18:02:28,976: 
+
+2018-07-24 18:02:33,401: 
+*******CMD*******
+
+2018-07-24 18:02:33,401: 
+
+2018-07-24 18:02:33,402: java -jar "/mnt/hgfs/U8/U8SDKTool-Win-lanmao/tool/liunx/lib/dx.jar" --dex --multi-dex --output="/mnt/hgfs/U8/U8SDKTool-Win-lanmao/workspace/jlj/uc/sdk/uc"  /mnt/hgfs/U8/U8SDKTool-Win-lanmao/config/sdk/uc/u8sdk_uc.jar /mnt/hgfs/U8/U8SDKTool-Win-lanmao/config/sdk/uc/libs/alipaySdk-20160825.jar /mnt/hgfs/U8/U8SDKTool-Win-lanmao/config/sdk/uc/libs/classes.jar
+2018-07-24 18:02:33,402: 
+
+2018-07-24 18:02:33,403: 
+
+2018-07-24 18:02:33,403: 
+
+2018-07-24 18:02:33,404: warning: Ignoring InnerClasses attribute for an anonymous inner class
+(com.alipay.android.phone.mrpc.core.c) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(com.alipay.android.phone.mrpc.core.d) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(com.alipay.android.phone.mrpc.core.e) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(com.alipay.android.phone.mrpc.core.f) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(com.alipay.android.phone.mrpc.core.i) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(com.alipay.android.phone.mrpc.core.m) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(com.alipay.android.phone.mrpc.core.n) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(com.alipay.apmobilesecuritysdk.face.APSecuritySdk$1) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(com.alipay.apmobilesecuritysdk.g.c) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(com.alipay.b.a.a.c.c) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(com.alipay.b.a.a.e.c) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(com.alipay.b.a.a.b.c) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(com.alipay.sdk.app.a) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(com.alipay.sdk.app.d) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(com.alipay.sdk.app.e) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(com.alipay.sdk.app.f) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(com.alipay.sdk.app.g) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(com.alipay.sdk.app.statistic.b) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(com.alipay.sdk.app.c) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(com.alipay.sdk.auth.a) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(com.alipay.sdk.auth.b) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(com.alipay.sdk.auth.c) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(com.alipay.sdk.auth.d) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(com.alipay.sdk.auth.e) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(com.alipay.sdk.auth.f) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(com.alipay.sdk.auth.g) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(com.alipay.sdk.authjs.d) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(com.alipay.sdk.auth.i) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(com.alipay.sdk.authjs.e) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(com.alipay.sdk.data.b) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(com.alipay.sdk.data.d) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(com.alipay.sdk.util.f) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(com.alipay.sdk.util.g) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(com.alipay.sdk.util.m) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(com.alipay.sdk.util.n) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(com.alipay.sdk.widget.b) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(com.alipay.sdk.widget.e) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(com.alipay.sdk.widget.c) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+2018-07-24 18:02:33,407: 
+
+2018-07-24 18:02:33,407: 
+*******************
+
+2018-07-24 18:02:33,407: 
+
+2018-07-24 18:02:39,732: The sdk manifest file is /mnt/hgfs/U8/U8SDKTool-Win-lanmao/workspace/jlj/uc/sdk/uc/SDKManifest.xml
+2018-07-24 18:02:39,732: 
+
+2018-07-24 18:02:39,739: merge manifest file success.
+2018-07-24 18:02:39,739: 
+
+2018-07-24 18:02:40,471: the copyFrom /mnt/hgfs/U8/U8SDKTool-Win-lanmao/workspace/jlj/uc/sdk/uc/root is not exists.
+2018-07-24 18:02:40,472: 
+
+2018-07-24 18:02:40,486: STREAM b'IHDR' 16 13
+2018-07-24 18:02:40,487: STREAM b'IDAT' 41 594678
+2018-07-24 18:02:40,487: the icon mark config/sdk/uc/icon_marks/right-bottom.png is not exists of sdk uc.no icon mark.
+2018-07-24 18:02:40,493: 
+
+2018-07-24 18:02:40,667: the channel 13201 special res path is not exists. /mnt/hgfs/U8/U8SDKTool-Win-lanmao/games/jlj/channels/13201
+2018-07-24 18:02:40,668: 
+
+2018-07-24 18:02:40,721: the copyFrom /mnt/hgfs/U8/U8SDKTool-Win-lanmao/games/jlj/res/libs is not exists.
+2018-07-24 18:02:40,722: 
+
+2018-07-24 18:02:40,724: the copyFrom /mnt/hgfs/U8/U8SDKTool-Win-lanmao/games/jlj/res/res is not exists.
+2018-07-24 18:02:40,726: 
+
+2018-07-24 18:02:40,749: the develop info is isLandscape=0
+GameID=804289
+U8_SDK_VERSION_CODE=1
+U8_Channel=13201
+U8_APPID=54
+U8_APPKEY=6142d92c27d0a6ffea8a03d468d3e517
+U8_SDK_SHOW_SPLASH=false
+U8SERVER_URL=http://tysdk.bluecatgame.com
+U8_ANALYTICS=false
+
+2018-07-24 18:02:40,751: 
+
+2018-07-24 18:02:40,759: The manifestFile meta-data write successfully
+2018-07-24 18:02:40,760: 
+
+2018-07-24 18:02:40,762: -----------log config--------------
+2018-07-24 18:02:40,762: 
+
+2018-07-24 18:02:40,763: ulog.enable = true
+2018-07-24 18:02:40,763: 
+
+2018-07-24 18:02:40,764: ulog.level = DEBUG
+2018-07-24 18:02:40,764: 
+
+2018-07-24 18:02:40,764: ulog.local = true
+2018-07-24 18:02:40,764: 
+
+2018-07-24 18:02:40,764: ulog.remote = true
+2018-07-24 18:02:40,765: 
+
+2018-07-24 18:02:40,765: ulog.remote_interval = 1000
+2018-07-24 18:02:40,765: 
+
+2018-07-24 18:02:40,766: ulog.remote_url = http://192.168.1.108:8090/
+2018-07-24 18:02:40,766: 
+
+2018-07-24 18:02:40,767: -----------log config--------------
+
+2018-07-24 18:02:40,768: 
+
+2018-07-24 18:02:40,770: now to execute post_script.py of game jlj 
+2018-07-24 18:02:40,771: 
+
+2018-07-24 18:02:40,777: now to modify game name ....
+2018-07-24 18:02:40,777: 
+
+2018-07-24 18:02:40,779: the lable name is :@string/app_name
+2018-07-24 18:02:40,779: 
+
+2018-07-24 18:02:40,781: the new game name is 
+2018-07-24 18:02:40,782: 
+
+2018-07-24 18:02:40,784: the minSdkVersion targetSdkVersion maxSdkVersion must configed all or configed zero
+2018-07-24 18:02:40,784: 
+
+2018-07-24 18:02:40,861: /mnt/hgfs/U8/U8SDKTool-Win-lanmao/workspace/jlj/uc/decompile/res/drawable-ldpi-v4/app_icon.png duplicated
+2018-07-24 18:02:40,862: 
+
+2018-07-24 18:02:40,864: /mnt/hgfs/U8/U8SDKTool-Win-lanmao/workspace/jlj/uc/decompile/res/drawable-mdpi-v4/app_icon.png duplicated
+2018-07-24 18:02:40,864: 
+
+2018-07-24 18:02:40,865: /mnt/hgfs/U8/U8SDKTool-Win-lanmao/workspace/jlj/uc/decompile/res/drawable-hdpi-v4/app_icon.png duplicated
+2018-07-24 18:02:40,866: 
+
+2018-07-24 18:02:40,867: /mnt/hgfs/U8/U8SDKTool-Win-lanmao/workspace/jlj/uc/decompile/res/drawable-xhdpi-v4/app_icon.png duplicated
+2018-07-24 18:02:40,868: 
+
+2018-07-24 18:02:40,872: /mnt/hgfs/U8/U8SDKTool-Win-lanmao/workspace/jlj/uc/decompile/res/drawable-xxhdpi-v4/app_icon.png duplicated
+2018-07-24 18:02:40,872: 
+
+2018-07-24 18:02:40,874: /mnt/hgfs/U8/U8SDKTool-Win-lanmao/workspace/jlj/uc/decompile/res/drawable-xxxhdpi-v4/app_icon.png duplicated
+2018-07-24 18:02:40,875: 
+
+2018-07-24 18:02:40,875: 生成R：临时路径是: /mnt/hgfs/U8/U8SDKTool-Win-lanmao/workspace/jlj/uc/temp
+2018-07-24 18:02:40,878: 
+

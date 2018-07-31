@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    
+    <subplugins>
+
+        <subplugin name="SinaWeibo" showName="新浪微博">
+            <param name="SortId" value="1" desc = "此平台在您分享列表中的位置，整型，数值越大越靠后" showName="SortId" bWriteInManifest="0" bWriteInClient="0"/>
+            <param name="AppKey" value="568898243" desc = "填写您在新浪微博上注册到的AppKey" showName="AppKey" bWriteInManifest="0" bWriteInClient="0"/>  
+            <param name="AppSecret" value="38a4f8204cc784f81f9f0daaf31e02e3" desc = "填写您在新浪微博上注册到的AppSecret" showName="AppSecret" bWriteInManifest="0" bWriteInClient="0"/>
+
+            <param name="RedirectUrl" value="http://www.sharesdk.cn" desc = "填写您在新浪微博上注册的RedirectUrl" showName="RedirectUrl" bWriteInManifest="0" bWriteInClient="0"/> 
+            <param name="ShareByAppClient" value="http://www.sharesdk.cn" desc = "是否使用微博客户端进行分享" showName="ShareByAppClient" bWriteInManifest="0" bWriteInClient="0"/>                                             
+        </subplugin>
+
+        <subplugin name="TencentWeibo" showName="腾讯微博">
+            <param name="SortId" value="2" desc = "此平台在您分享列表中的位置，整型，数值越大越靠后" showName="SortId" bWriteInManifest="0" bWriteInClient="0"/>
+            <param name="AppKey" value="801307650" desc = "填写您在腾讯微博上注册到的AppKey" showName="AppKey" bWriteInManifest="0" bWriteInClient="0"/>  
+            <param name="AppSecret" value="ae36f4ee3946e1cbb98d6965b0b2ff5c" desc = "填写您在腾讯微博上注册到的AppSecret" showName="AppSecret" bWriteInManifest="0" bWriteInClient="0"/>
+
+            <param name="RedirectUrl" value="http://www.sharesdk.cn" desc = "填写您在腾讯微博上注册的RedirectUrl" showName="RedirectUrl" bWriteInManifest="0" bWriteInClient="0"/>                                             
+        </subplugin>        
+
+        <subplugin name="QQ" showName="QQ">
+            <param name="SortId" value="3" desc="此平台在您分享列表中的位置，整型，数值越大越靠后" showName="SortId" bWriteInManifest="0" bWriteInClient="0"/>
+            <param name="AppId" value="100371282" desc="填写您在QQ上注册到的AppId" showName="AppId" bWriteInManifest="0" bWriteInClient="0"/>  
+            <param name="AppKey" value="aed9b0303e3ed1e27bae87c33761161d" desc="填写您在QQ上注册到的AppKey" showName="AppKey" bWriteInManifest="0" bWriteInClient="0"/>
+            <param name="ShareByAppClient" value="true" desc="是否使用QQ客户端进行分享" showName="ShareByAppClient" bWriteInManifest="0" bWriteInClient="0"/>                            
+        </subplugin>
+
+        <subplugin name="QZone" showName="QQ空间">
+            <param name="SortId" value="4" desc="此平台在您分享列表中的位置，整型，数值越大越靠后" showName="SortId" bWriteInManifest="0" bWriteInClient="0"/>
+            <param name="AppId" value="100371282" desc="填写您在QZONE上注册到的AppId" showName="AppId" bWriteInManifest="0" bWriteInClient="0"/>  
+            <param name="AppKey" value="aed9b0303e3ed1e27bae87c33761161d" desc="填写您在QZONE上注册到的AppKey" showName="AppKey" bWriteInManifest="0" bWriteInClient="0"/>
+            <param name="ShareByAppClient" value="true" desc="是否使用微博客户端进行分享" showName="ShareByAppClient" bWriteInManifest="0" bWriteInClient="0"/>                            
+        </subplugin>  
+
+        <subplugin name="Wechat" showName="微信">
+            <param name="SortId" value="5" desc="此平台在您分享列表中的位置，整型，数值越大越靠后" showName="SortId" bWriteInManifest="0" bWriteInClient="0"/>
+            <param name="AppId" value="wx9e91b08387f4fc2c" desc="填写您在微信上注册到的AppId" showName="AppId" bWriteInManifest="0" bWriteInClient="0"/>  
+            <param name="AppSecret" value="6bcc5b6298ee39f7e373ceeb2b11cab2" desc="填写您在微信上注册到的AppSecret" showName="AppSecret" bWriteInManifest="0" bWriteInClient="0"/>
+            <param name="BypassApproval" value="true" desc="BypassApproval是绕过审核的标记，设置为true后AppId将被忽略，故不经过审核的应用也可以执行分享" showName="BypassApproval" bWriteInManifest="0" bWriteInClient="0"/>                            
+        </subplugin>
+
+        <subplugin name="WechatMoments" showName="微信朋友圈">
+            <param name="SortId" value="6" desc="此平台在您分享列表中的位置，整型，数值越大越靠后" showName="SortId" bWriteInManifest="0" bWriteInClient="0"/>
+            <param name="AppId" value="wx9e91b08387f4fc2c" desc="填写您在微信上注册到的AppId" showName="AppId" bWriteInManifest="0" bWriteInClient="0"/>  
+            <param name="AppSecret" value="6bcc5b6298ee39f7e373ceeb2b11cab2" desc="填写您在微信上注册到的AppSecret" showName="AppSecret" bWriteInManifest="0" bWriteInClient="0"/>
+            <param name="BypassApproval" value="true" desc="BypassApproval是绕过审核的标记，设置为true后AppId将被忽略，故不经过审核的应用也可以执行分享" showName="BypassApproval" bWriteInManifest="0" bWriteInClient="0"/>                            
+        </subplugin>
+
+        <subplugin name="WechatFavorite" showName="微信收藏">
+            <param name="SortId" value="7" desc="此平台在您分享列表中的位置，整型，数值越大越靠后" showName="SortId" bWriteInManifest="0" bWriteInClient="0"/>
+            <param name="AppId" value="wx9e91b08387f4fc2c" desc="填写您在微信上注册到的AppId" showName="AppId" bWriteInManifest="0" bWriteInClient="0"/>
+            <param name="AppSecret" value="6bcc5b6298ee39f7e373ceeb2b11cab2" desc="填写您在微信上注册到的AppSecret" showName="AppSecret" bWriteInManifest="0" bWriteInClient="0"/>                        
+        </subplugin>                             
+
+    </subplugins>
+
+    <params>
+        <param name="AppKey" value="androidv1101" desc="ShareSDK的appkey" showName="AppKey" bWriteIntoManifest="0" bWriteIntoClient="0" />
+    </params>
+    
+    <operations>
+        <operation step="1" type="mergeManifest" from="SDKManifest.xml" to="AndroidManifest.xml" />
+        <operation step="2" type="copyRes" from="assets" to="assets" />
+        <operation step="3" type="copyRes" from="libs" to="lib" />
+        <operation step="4" type="copyRes" from="res" to="res" />
+        <operation step="5" type="script" from="script.py"/>
+    </operations>
+    
+    <plugins>
+        <plugin name="com.u8.sdk.ShareSDKShare" type="4" desc="用户分享接口"/>
+    </plugins>
+
+    <version>
+        <versionCode>1</versionCode>
+        <versionName>2.5.7</versionName>
+    </version>    
+    
+</config>

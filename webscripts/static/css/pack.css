@@ -1,0 +1,27 @@
+.pack .thumbnail {
+    width: 300px;
+}
+.thumbnail{
+	display: block;
+    height: 190px;
+    overflow: hidden;
+    padding: 4px;
+    margin-bottom: 20px;
+    line-height: 1.42857143;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    -webkit-transition: border .2s ease-in-out;
+    -o-transition: border .2s ease-in-out;
+    transition: border .2s ease-in-out;
+    margin-top: 120px; 	
+}
+.pack3 table.jambo_table thead {
+    background: rgba(52, 73, 94, 0.94);
+    color: #ECF0F1;
+}
+/*更改layui*/
+.layui-input-block{
+	margin-left: 80px;
+}
+/*更改layui end*/

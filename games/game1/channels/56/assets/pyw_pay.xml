@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<goods>
+    <!-- productID:游戏中商品固定ID -->
+    <!-- waresid:在朋友玩后台中配置的商品ID -->
+    <good productID="1" waresid="300" />   
+    <good productID="2" waresid="301" />     
+</goods>

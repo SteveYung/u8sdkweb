@@ -1,0 +1,57 @@
+/*更改 layui*/
+
+.channel .layui-table-view .layui-table td,
+.channel .layui-table-view .layui-table th {
+    border: none;
+}
+
+.channel .layui-input-block {
+    margin-left: 200px;
+    min-height: 36px;
+    margin-right: 120px;
+}
+
+.layui-form-label {
+    width: 200px;
+    text-align: right;
+}
+
+.channel .layui-upload-img {
+    width: 92px;
+    height: 92px;
+    margin: 0 10px 10px 0;
+}
+
+.channel .layui-form-item {
+    margin-bottom: 10px;
+}
+
+
+/*.layui-form-item{
+	margin-left: 50px;
+}*/
+
+.channel .gameWidth {
+    margin-left: 0;
+}
+
+.channel .gameWidth .layui-form-label {
+    width: 160px;
+    padding: 9px 0;
+}
+
+.channel .gameWidth .layui-inline {
+    width: 280px;
+    margin-right: 0px;
+}
+
+.channel .gameWidth .layui-input-inline {
+    width: 110px;
+}
+
+
+/*更改 layui end*/
+
+.channel .edit-gift {
+    padding: 20px 0;
+}

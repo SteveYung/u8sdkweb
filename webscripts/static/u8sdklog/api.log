@@ -1,0 +1,38 @@
+('ptjj', 'lanmaocps')
+('ptjj', 'lanmaocps')
+('ptjj', 'lanmaocps')
+('ptjj', 'lanmaocps')
+ptjj lanmaocps
+('ptjj', 'lanmaocps')
+ptjj
+lanmaocps
+('ptjj', 'lanmaocps')
+ptjj
+lanmaocps
+('ptjj', 'lanmaocps')
+('ptjj', 'lanmaocps')
+('jlj', 'lanmaocps')
+('jlj', 'uc')
+decompile cmd : java -jar /mnt/hgfs/U8/U8SDKTool-Win-lanmao/tool/liunx/apktool.jar d /mnt/hgfs/U8/U8SDKTool-Win-lanmao/workspace/jlj/uc/temp.apk -f -o /mnt/hgfs/U8/U8SDKTool-Win-lanmao/workspace/jlj/uc/decompile
+now to check cpu support...
+['armeabi', 'armeabi-v7a', 'x86', 'mips']
+('jlj', 'uc')
+decompile cmd : java -jar /mnt/hgfs/U8/U8SDKTool-Win-lanmao/tool/liunx/apktool.jar d /mnt/hgfs/U8/U8SDKTool-Win-lanmao/workspace/jlj/uc/temp.apk -f -o /mnt/hgfs/U8/U8SDKTool-Win-lanmao/workspace/jlj/uc/decompile
+now to check cpu support...
+['armeabi', 'armeabi-v7a', 'x86', 'mips']
+('jlj', 'uc')
+decompile cmd : java -jar /mnt/hgfs/U8/U8SDKTool-Win-lanmao/tool/liunx/apktool.jar d /mnt/hgfs/U8/U8SDKTool-Win-lanmao/workspace/jlj/uc/temp.apk -f -o /mnt/hgfs/U8/U8SDKTool-Win-lanmao/workspace/jlj/uc/decompile
+now to check cpu support...
+['armeabi', 'armeabi-v7a', 'x86', 'mips']
+('wyfx', 'lehihi')
+decompile cmd : java -jar /mnt/hgfs/U8/U8SDKTool-Win-lanmao/tool/liunx/apktool.jar d /mnt/hgfs/U8/U8SDKTool-Win-lanmao/workspace/wyfx/lehihi/temp.apk -f -o /mnt/hgfs/U8/U8SDKTool-Win-lanmao/workspace/wyfx/lehihi/decompile
+now to check cpu support...
+['armeabi', 'armeabi-v7a', 'x86', 'mips']
+生成新的R.java
+com.wyfx.lhh
+/mnt/hgfs/U8/U8SDKTool-Win-lanmao/workspace/wyfx/lehihi/decompile
+{'game': 'wyfx', 'id': '11701', 'name': 'lehihi', 'sdk': 'lehihi', 'desc': 'lehihi SDK', 'suffix': 'com.wyfx.lhh', 'splash': '0', 'splash_copy_to_unity': '0', 'icon': 'rb', 'gameName': '我欲飞仙', 'sdkLogicVersionCode': '1', 'sdkLogicVersionName': '3.2.0', 'sdkParams': {'PID': '14165', 'APP_KEY': '961cff98a49875d1595de70dc50ab1d2', 'isLandscape': '0'}, 'params': [{'name': 'PID', 'value': '14165', 'required': '1', 'showName': 'PID', 'bWriteInManifest': '0', 'bWriteInClient': '1'}, {'name': 'APP_KEY', 'value': '961cff98a49875d1595de70dc50ab1d2', 'required': '1', 'showName': 'APP_KEY', 'bWriteInManifest': '0', 'bWriteInClient': '1'}, {'name': 'isLandscape', 'value': '0', 'required': '1', 'showName': 'isLandscape', 'bWriteInManifest': '0', 'bWriteInClient': '1'}], 'operations': [{'type': 'mergeManifest', 'from': 'SDKManifest.xml', 'to': 'AndroidManifest.xml'}, {'type': 'copyRes', 'from': 'assets', 'to': 'assets'}, {'type': 'copyRes', 'from': 'libs', 'to': 'lib'}, {'type': 'copyRes', 'from': 'res', 'to': 'res'}, {'type': 'copyRes', 'from': 'root', 'to': ''}], 'plugins': [{'name': 'com.u8.sdk.LehihiUser', 'type': '1'}, {'name': 'com.u8.sdk.LehihiPay', 'type': '2'}], 'sdkVersionCode': '1', 'sdkVersionName': '8.0', 'third-plugins': []}
+===================================
+"/mnt/hgfs/U8/U8SDKTool-Win-lanmao/tool/liunx/aapt" p -f -m -J "/mnt/hgfs/U8/U8SDKTool-Win-lanmao/workspace/wyfx/lehihi/temp/gen" -S "/mnt/hgfs/U8/U8SDKTool-Win-lanmao/workspace/wyfx/lehihi/temp/res" -I "/mnt/hgfs/U8/U8SDKTool-Win-lanmao/tool/liunx/android.jar" -M "/mnt/hgfs/U8/U8SDKTool-Win-lanmao/workspace/wyfx/lehihi/decompile/AndroidManifest.xml"
+"java" -jar -Xms1024m -Xmx1024m "/mnt/hgfs/U8/U8SDKTool-Win-lanmao/tool/liunx/apktool.jar" -v b -f "/mnt/hgfs/U8/U8SDKTool-Win-lanmao/workspace/wyfx/lehihi/decompile" -o "/mnt/hgfs/U8/U8SDKTool-Win-lanmao/workspace/wyfx/lehihi/output.apk"
+0

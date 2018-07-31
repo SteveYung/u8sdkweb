@@ -1,0 +1,900 @@
+2018-07-24 18:13:06,780: now to package uc...
+2018-07-24 18:13:06,781: 
+
+2018-07-24 18:14:04,206: 
+*******CMD*******
+
+2018-07-24 18:14:04,206: 
+
+2018-07-24 18:14:04,207: java -jar /mnt/hgfs/U8/U8SDKTool-Win-lanmao/tool/liunx/apktool.jar d /mnt/hgfs/U8/U8SDKTool-Win-lanmao/workspace/jlj/uc/temp.apk -f -o /mnt/hgfs/U8/U8SDKTool-Win-lanmao/workspace/jlj/uc/decompile
+2018-07-24 18:14:04,207: 
+
+2018-07-24 18:14:04,208: 
+
+2018-07-24 18:14:04,208: 
+
+2018-07-24 18:14:04,209: I: Using Apktool 2.3.3 on temp.apk
+I: Loading resource table...
+I: Decoding AndroidManifest.xml with resources...
+S: WARNING: Could not write to (/root/.local/share/apktool/framework), using /tmp instead...
+S: Please be aware this is a volatile directory and frameworks could go missing, please utilize --frame-path if the default storage directory is unavailable
+I: Loading resource table from file: /tmp/1.apk
+I: Regular manifest package...
+I: Decoding file-resources...
+I: Decoding values */* XMLs...
+I: Baksmaling classes.dex...
+I: Copying assets and libs...
+I: Copying unknown files...
+I: Copying original files...
+2018-07-24 18:14:04,209: 
+
+2018-07-24 18:14:04,209: 
+*******************
+
+2018-07-24 18:14:04,210: 
+
+2018-07-24 18:14:04,210: now to check split dex ... 
+2018-07-24 18:14:04,210: 
+
+2018-07-24 18:14:04,213: the new package name is com.hslm.jlj.aligames
+2018-07-24 18:14:04,213: 
+
+2018-07-24 18:14:04,214: the channel uc has no supported plugins.
+2018-07-24 18:14:04,215: 
+
+2018-07-24 18:14:07,447: 
+*******CMD*******
+
+2018-07-24 18:14:07,448: 
+
+2018-07-24 18:14:07,448: java -jar "/mnt/hgfs/U8/U8SDKTool-Win-lanmao/tool/liunx/lib/dx.jar" --dex --multi-dex --output="/mnt/hgfs/U8/U8SDKTool-Win-lanmao/workspace/jlj/uc/sdk/uc"  /mnt/hgfs/U8/U8SDKTool-Win-lanmao/config/sdk/uc/u8sdk_uc.jar /mnt/hgfs/U8/U8SDKTool-Win-lanmao/config/sdk/uc/libs/alipaySdk-20160825.jar /mnt/hgfs/U8/U8SDKTool-Win-lanmao/config/sdk/uc/libs/classes.jar
+2018-07-24 18:14:07,450: 
+
+2018-07-24 18:14:07,450: 
+
+2018-07-24 18:14:07,451: 
+
+2018-07-24 18:14:07,451: warning: Ignoring InnerClasses attribute for an anonymous inner class
+(com.alipay.android.phone.mrpc.core.d) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(com.alipay.android.phone.mrpc.core.e) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(com.alipay.android.phone.mrpc.core.f) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(com.alipay.android.phone.mrpc.core.i) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(com.alipay.android.phone.mrpc.core.c) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(com.alipay.android.phone.mrpc.core.n) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(com.alipay.android.phone.mrpc.core.m) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(com.alipay.apmobilesecuritysdk.g.c) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(com.alipay.apmobilesecuritysdk.face.APSecuritySdk$1) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(com.alipay.b.a.a.b.c) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(com.alipay.b.a.a.c.c) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(com.alipay.b.a.a.e.c) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(com.alipay.sdk.app.a) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(com.alipay.sdk.app.e) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(com.alipay.sdk.app.f) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(com.alipay.sdk.app.g) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(com.alipay.sdk.app.statistic.b) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(com.alipay.sdk.app.c) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(com.alipay.sdk.app.d) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(com.alipay.sdk.auth.a) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(com.alipay.sdk.auth.b) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(com.alipay.sdk.auth.c) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(com.alipay.sdk.auth.f) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(com.alipay.sdk.auth.g) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(com.alipay.sdk.auth.i) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(com.alipay.sdk.auth.d) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(com.alipay.sdk.auth.e) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(com.alipay.sdk.authjs.d) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(com.alipay.sdk.authjs.e) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(com.alipay.sdk.data.b) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(com.alipay.sdk.data.d) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(com.alipay.sdk.util.g) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(com.alipay.sdk.util.f) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(com.alipay.sdk.util.m) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(com.alipay.sdk.util.n) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(com.alipay.sdk.widget.b) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(com.alipay.sdk.widget.e) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(com.alipay.sdk.widget.c) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+2018-07-24 18:14:07,461: 
+
+2018-07-24 18:14:07,461: 
+*******************
+
+2018-07-24 18:14:07,461: 
+
+2018-07-24 18:14:14,661: The sdk manifest file is /mnt/hgfs/U8/U8SDKTool-Win-lanmao/workspace/jlj/uc/sdk/uc/SDKManifest.xml
+2018-07-24 18:14:14,662: 
+
+2018-07-24 18:14:14,675: merge manifest file success.
+2018-07-24 18:14:14,675: 
+
+2018-07-24 18:14:15,383: the copyFrom /mnt/hgfs/U8/U8SDKTool-Win-lanmao/workspace/jlj/uc/sdk/uc/root is not exists.
+2018-07-24 18:14:15,384: 
+
+2018-07-24 18:14:15,405: STREAM b'IHDR' 16 13
+2018-07-24 18:14:15,406: STREAM b'IDAT' 41 594678
+2018-07-24 18:14:15,407: the icon mark config/sdk/uc/icon_marks/right-bottom.png is not exists of sdk uc.no icon mark.
+2018-07-24 18:14:15,407: 
+
+2018-07-24 18:14:15,575: the channel 13201 special res path is not exists. /mnt/hgfs/U8/U8SDKTool-Win-lanmao/games/jlj/channels/13201
+2018-07-24 18:14:15,575: 
+
+2018-07-24 18:14:15,620: the copyFrom /mnt/hgfs/U8/U8SDKTool-Win-lanmao/games/jlj/res/libs is not exists.
+2018-07-24 18:14:15,620: 
+
+2018-07-24 18:14:15,621: the copyFrom /mnt/hgfs/U8/U8SDKTool-Win-lanmao/games/jlj/res/res is not exists.
+2018-07-24 18:14:15,621: 
+
+2018-07-24 18:14:15,646: the develop info is isLandscape=0
+GameID=804289
+U8_SDK_VERSION_CODE=1
+U8_Channel=13201
+U8_APPID=54
+U8_APPKEY=6142d92c27d0a6ffea8a03d468d3e517
+U8_SDK_SHOW_SPLASH=false
+U8SERVER_URL=http://tysdk.bluecatgame.com
+U8_ANALYTICS=false
+
+2018-07-24 18:14:15,647: 
+
+2018-07-24 18:14:15,652: The manifestFile meta-data write successfully
+2018-07-24 18:14:15,652: 
+
+2018-07-24 18:14:15,654: -----------log config--------------
+2018-07-24 18:14:15,654: 
+
+2018-07-24 18:14:15,655: ulog.enable = true
+2018-07-24 18:14:15,655: 
+
+2018-07-24 18:14:15,656: ulog.level = DEBUG
+2018-07-24 18:14:15,656: 
+
+2018-07-24 18:14:15,657: ulog.local = true
+2018-07-24 18:14:15,657: 
+
+2018-07-24 18:14:15,658: ulog.remote = true
+2018-07-24 18:14:15,658: 
+
+2018-07-24 18:14:15,658: ulog.remote_interval = 1000
+2018-07-24 18:14:15,659: 
+
+2018-07-24 18:14:15,659: ulog.remote_url = http://192.168.1.108:8090/
+2018-07-24 18:14:15,660: 
+
+2018-07-24 18:14:15,662: -----------log config--------------
+
+2018-07-24 18:14:15,663: 
+
+2018-07-24 18:14:15,674: now to execute post_script.py of game jlj 
+2018-07-24 18:14:15,674: 
+
+2018-07-24 18:14:15,681: now to modify game name ....
+2018-07-24 18:14:15,682: 
+
+2018-07-24 18:14:15,684: the lable name is :@string/app_name
+2018-07-24 18:14:15,685: 
+
+2018-07-24 18:14:15,686: the new game name is 
+2018-07-24 18:14:15,687: 
+
+2018-07-24 18:14:15,689: the minSdkVersion targetSdkVersion maxSdkVersion must configed all or configed zero
+2018-07-24 18:14:15,689: 
+
+2018-07-24 18:14:15,751: /mnt/hgfs/U8/U8SDKTool-Win-lanmao/workspace/jlj/uc/decompile/res/drawable-ldpi-v4/app_icon.png duplicated
+2018-07-24 18:14:15,752: 
+
+2018-07-24 18:14:15,754: /mnt/hgfs/U8/U8SDKTool-Win-lanmao/workspace/jlj/uc/decompile/res/drawable-mdpi-v4/app_icon.png duplicated
+2018-07-24 18:14:15,756: 
+
+2018-07-24 18:14:15,758: /mnt/hgfs/U8/U8SDKTool-Win-lanmao/workspace/jlj/uc/decompile/res/drawable-hdpi-v4/app_icon.png duplicated
+2018-07-24 18:14:15,758: 
+
+2018-07-24 18:14:15,762: /mnt/hgfs/U8/U8SDKTool-Win-lanmao/workspace/jlj/uc/decompile/res/drawable-xhdpi-v4/app_icon.png duplicated
+2018-07-24 18:14:15,762: 
+
+2018-07-24 18:14:15,764: /mnt/hgfs/U8/U8SDKTool-Win-lanmao/workspace/jlj/uc/decompile/res/drawable-xxhdpi-v4/app_icon.png duplicated
+2018-07-24 18:14:15,772: 
+
+2018-07-24 18:14:15,779: /mnt/hgfs/U8/U8SDKTool-Win-lanmao/workspace/jlj/uc/decompile/res/drawable-xxxhdpi-v4/app_icon.png duplicated
+2018-07-24 18:14:15,779: 
+
+2018-07-24 18:14:15,780: 生成R：临时路径是: /mnt/hgfs/U8/U8SDKTool-Win-lanmao/workspace/jlj/uc/temp
+2018-07-24 18:14:15,781: 
+
+2018-07-24 18:14:26,417: 
+*******CMD*******
+
+2018-07-24 18:14:26,418: 
+
+2018-07-24 18:14:26,418: "javac" -source 1.7 -target 1.7 -encoding UTF-8 "/mnt/hgfs/U8/U8SDKTool-Win-lanmao/workspace/jlj/uc/temp/gen/com/hslm/jlj/aligames/R.java"
+2018-07-24 18:14:26,419: 
+
+2018-07-24 18:14:26,419: 
+
+2018-07-24 18:14:26,419: 
+
+2018-07-24 18:14:26,420: 警告: [options] 未与 -source 1.7 一起设置引导类路径
+1 个警告
+2018-07-24 18:14:26,420: 
+
+2018-07-24 18:14:26,420: 
+*******************
+
+2018-07-24 18:14:26,421: 
+
+2018-07-24 18:14:26,839: 
+*******CMD*******
+
+2018-07-24 18:14:26,839: 
+
+2018-07-24 18:14:26,840: java -jar -Xmx1024m -Xms1024m "/mnt/hgfs/U8/U8SDKTool-Win-lanmao/tool/liunx/lib/dx.jar" --dex --output="/mnt/hgfs/U8/U8SDKTool-Win-lanmao/workspace/jlj/uc/temp/classes.dex" "/mnt/hgfs/U8/U8SDKTool-Win-lanmao/workspace/jlj/uc/temp/gen"
+2018-07-24 18:14:26,840: 
+
+2018-07-24 18:14:26,841: 
+
+2018-07-24 18:14:26,841: 
+
+2018-07-24 18:14:26,841: 
+*******************
+
+2018-07-24 18:14:26,842: 
+
+2018-07-24 18:14:27,217: the sdk uc has no extraR config. don't need to generate extra R.java
+2018-07-24 18:14:27,218: 
+
+2018-07-24 18:14:27,219: now to check split dex ... 
+2018-07-24 18:14:27,219: 
+
+2018-07-24 18:14:46,377: the total func num:23353
+2018-07-24 18:14:46,377: 
+
+2018-07-24 18:14:46,378: split dex success. the classes.dex num:1
+2018-07-24 18:14:46,378: 
+
+2018-07-24 18:14:46,380: 现在重新编译APK....
+2018-07-24 18:14:46,380: 
+
+2018-07-24 18:19:08,743: 
+*******CMD*******
+
+2018-07-24 18:19:08,744: 
+
+2018-07-24 18:19:08,744: "java" -jar -Xms1024m -Xmx1024m "/mnt/hgfs/U8/U8SDKTool-Win-lanmao/tool/liunx/apktool.jar" -v b -f "/mnt/hgfs/U8/U8SDKTool-Win-lanmao/workspace/jlj/uc/decompile" -o "/mnt/hgfs/U8/U8SDKTool-Win-lanmao/workspace/jlj/uc/output.apk"
+2018-07-24 18:19:08,745: 
+
+2018-07-24 18:19:08,745: 
+
+2018-07-24 18:19:08,746: 
+
+2018-07-24 18:19:08,746: 七月 24, 2018 6:14:46 下午 brut.androlib.Androlib build
+信息: Using Apktool 2.3.3
+七月 24, 2018 6:14:46 下午 brut.androlib.Androlib buildSourcesSmali
+信息: Smaling smali folder into classes.dex...
+七月 24, 2018 6:14:56 下午 brut.androlib.Androlib buildResourcesFull
+信息: Building resources...
+七月 24, 2018 6:14:56 下午 brut.androlib.res.AndrolibResources getFrameworkDir
+严重: WARNING: Could not write to (/root/.local/share/apktool/framework), using /tmp instead...
+七月 24, 2018 6:14:56 下午 brut.androlib.res.AndrolibResources getFrameworkDir
+严重: Please be aware this is a volatile directory and frameworks could go missing, please utilize --frame-path if the default storage directory is unavailable
+七月 24, 2018 6:14:56 下午 java.util.logging.LogManager$RootLogger log
+信息: Configurations:
+七月 24, 2018 6:14:56 下午 java.util.logging.LogManager$RootLogger log
+信息:  (default)
+七月 24, 2018 6:14:56 下午 java.util.logging.LogManager$RootLogger log
+信息:  v11
+七月 24, 2018 6:14:56 下午 java.util.logging.LogManager$RootLogger log
+信息:  v14
+七月 24, 2018 6:14:56 下午 java.util.logging.LogManager$RootLogger log
+信息:  v21
+七月 24, 2018 6:14:56 下午 java.util.logging.LogManager$RootLogger log
+信息:  ldpi
+七月 24, 2018 6:14:56 下午 java.util.logging.LogManager$RootLogger log
+信息:  mdpi
+七月 24, 2018 6:14:56 下午 java.util.logging.LogManager$RootLogger log
+信息:  mdpi-v4
+七月 24, 2018 6:14:56 下午 java.util.logging.LogManager$RootLogger log
+信息:  hdpi
+七月 24, 2018 6:14:56 下午 java.util.logging.LogManager$RootLogger log
+信息:  xhdpi
+七月 24, 2018 6:14:56 下午 java.util.logging.LogManager$RootLogger log
+信息:  xhdpi-v4
+七月 24, 2018 6:14:56 下午 java.util.logging.LogManager$RootLogger log
+信息:  xxhdpi
+七月 24, 2018 6:14:56 下午 java.util.logging.LogManager$RootLogger log
+信息:  xxxhdpi
+七月 24, 2018 6:14:56 下午 java.util.logging.LogManager$RootLogger log
+信息: 
+七月 24, 2018 6:14:56 下午 java.util.logging.LogManager$RootLogger log
+信息: Files:
+七月 24, 2018 6:14:56 下午 java.util.logging.LogManager$RootLogger log
+信息:   drawable/app_banner.png
+七月 24, 2018 6:14:56 下午 java.util.logging.LogManager$RootLogger log
+信息:     Src: (xhdpi-v4) /mnt/hgfs/U8/U8SDKTool-Win-lanmao/workspace/jlj/uc/decompile/res/drawable-xhdpi-v4/app_banner.png
+七月 24, 2018 6:14:56 下午 java.util.logging.LogManager$RootLogger log
+信息:   drawable/app_icon.png
+七月 24, 2018 6:14:56 下午 java.util.logging.LogManager$RootLogger log
+信息:     Src: (ldpi) /mnt/hgfs/U8/U8SDKTool-Win-lanmao/workspace/jlj/uc/decompile/res/drawable-ldpi/app_icon.png
+七月 24, 2018 6:14:56 下午 java.util.logging.LogManager$RootLogger log
+信息:     Src: (mdpi) /mnt/hgfs/U8/U8SDKTool-Win-lanmao/workspace/jlj/uc/decompile/res/drawable-mdpi/app_icon.png
+七月 24, 2018 6:14:56 下午 java.util.logging.LogManager$RootLogger log
+信息:     Src: (hdpi) /mnt/hgfs/U8/U8SDKTool-Win-lanmao/workspace/jlj/uc/decompile/res/drawable-hdpi/app_icon.png
+七月 24, 2018 6:14:56 下午 java.util.logging.LogManager$RootLogger log
+信息:     Src: (xhdpi) /mnt/hgfs/U8/U8SDKTool-Win-lanmao/workspace/jlj/uc/decompile/res/drawable-xhdpi/app_icon.png
+七月 24, 2018 6:14:56 下午 java.util.logging.LogManager$RootLogger log
+信息:     Src: (xxhdpi) /mnt/hgfs/U8/U8SDKTool-Win-lanmao/workspace/jlj/uc/decompile/res/drawable-xxhdpi/app_icon.png
+七月 24, 2018 6:14:56 下午 java.util.logging.LogManager$RootLogger log
+信息:     Src: (xxxhdpi) /mnt/hgfs/U8/U8SDKTool-Win-lanmao/workspace/jlj/uc/decompile/res/drawable-xxxhdpi/app_icon.png
+七月 24, 2018 6:14:56 下午 java.util.logging.LogManager$RootLogger log
+信息:   drawable/de.png
+七月 24, 2018 6:14:56 下午 java.util.logging.LogManager$RootLogger log
+信息:     Src: (hdpi) /mnt/hgfs/U8/U8SDKTool-Win-lanmao/workspace/jlj/uc/decompile/res/drawable-hdpi/de.png
+七月 24, 2018 6:14:56 下午 java.util.logging.LogManager$RootLogger log
+信息:   drawable/ic_launcher.png
+七月 24, 2018 6:14:56 下午 java.util.logging.LogManager$RootLogger log
+信息:     Src: (mdpi-v4) /mnt/hgfs/U8/U8SDKTool-Win-lanmao/workspace/jlj/uc/decompile/res/drawable-mdpi-v4/ic_launcher.png
+七月 24, 2018 6:14:56 下午 java.util.logging.LogManager$RootLogger log
+信息:     Src: (xhdpi-v4) /mnt/hgfs/U8/U8SDKTool-Win-lanmao/workspace/jlj/uc/decompile/res/drawable-xhdpi-v4/ic_launcher.png
+七月 24, 2018 6:14:56 下午 java.util.logging.LogManager$RootLogger log
+信息:   layout/demo_splash.xml
+七月 24, 2018 6:14:56 下午 java.util.logging.LogManager$RootLogger log
+信息:     Src: () /mnt/hgfs/U8/U8SDKTool-Win-lanmao/workspace/jlj/uc/decompile/res/layout/demo_splash.xml
+七月 24, 2018 6:14:56 下午 java.util.logging.LogManager$RootLogger log
+信息:   values/public.xml
+七月 24, 2018 6:14:56 下午 java.util.logging.LogManager$RootLogger log
+信息:     Src: () /mnt/hgfs/U8/U8SDKTool-Win-lanmao/workspace/jlj/uc/decompile/res/values/public.xml
+七月 24, 2018 6:14:56 下午 java.util.logging.LogManager$RootLogger log
+信息:   values/strings.xml
+七月 24, 2018 6:14:56 下午 java.util.logging.LogManager$RootLogger log
+信息:     Src: () /mnt/hgfs/U8/U8SDKTool-Win-lanmao/workspace/jlj/uc/decompile/res/values/strings.xml
+七月 24, 2018 6:14:56 下午 java.util.logging.LogManager$RootLogger log
+信息:   values/styles.xml
+七月 24, 2018 6:14:56 下午 java.util.logging.LogManager$RootLogger log
+信息:     Src: () /mnt/hgfs/U8/U8SDKTool-Win-lanmao/workspace/jlj/uc/decompile/res/values/styles.xml
+七月 24, 2018 6:14:56 下午 java.util.logging.LogManager$RootLogger log
+信息:     Src: (v11) /mnt/hgfs/U8/U8SDKTool-Win-lanmao/workspace/jlj/uc/decompile/res/values-v11/styles.xml
+七月 24, 2018 6:14:56 下午 java.util.logging.LogManager$RootLogger log
+信息:     Src: (v14) /mnt/hgfs/U8/U8SDKTool-Win-lanmao/workspace/jlj/uc/decompile/res/values-v14/styles.xml
+七月 24, 2018 6:14:56 下午 java.util.logging.LogManager$RootLogger log
+信息:     Src: (v21) /mnt/hgfs/U8/U8SDKTool-Win-lanmao/workspace/jlj/uc/decompile/res/values-v21/styles.xml
+七月 24, 2018 6:14:56 下午 java.util.logging.LogManager$RootLogger log
+信息:   AndroidManifest.xml
+七月 24, 2018 6:14:56 下午 java.util.logging.LogManager$RootLogger log
+信息:     Src: () /mnt/hgfs/U8/U8SDKTool-Win-lanmao/workspace/jlj/uc/decompile/AndroidManifest.xml
+七月 24, 2018 6:14:56 下午 java.util.logging.LogManager$RootLogger log
+信息: 
+七月 24, 2018 6:14:56 下午 java.util.logging.LogManager$RootLogger log
+信息: Resource Dirs:
+七月 24, 2018 6:14:56 下午 java.util.logging.LogManager$RootLogger log
+信息:   Type drawable
+七月 24, 2018 6:14:56 下午 java.util.logging.LogManager$RootLogger log
+信息:     drawable/app_banner.png
+七月 24, 2018 6:14:56 下午 java.util.logging.LogManager$RootLogger log
+信息:       Src: (xhdpi-v4) /mnt/hgfs/U8/U8SDKTool-Win-lanmao/workspace/jlj/uc/decompile/res/drawable-xhdpi-v4/app_banner.png
+七月 24, 2018 6:14:56 下午 java.util.logging.LogManager$RootLogger log
+信息:     drawable/app_icon.png
+七月 24, 2018 6:14:56 下午 java.util.logging.LogManager$RootLogger log
+信息:       Src: (ldpi) /mnt/hgfs/U8/U8SDKTool-Win-lanmao/workspace/jlj/uc/decompile/res/drawable-ldpi/app_icon.png
+七月 24, 2018 6:14:56 下午 java.util.logging.LogManager$RootLogger log
+信息:       Src: (mdpi) /mnt/hgfs/U8/U8SDKTool-Win-lanmao/workspace/jlj/uc/decompile/res/drawable-mdpi/app_icon.png
+七月 24, 2018 6:14:56 下午 java.util.logging.LogManager$RootLogger log
+信息:       Src: (hdpi) /mnt/hgfs/U8/U8SDKTool-Win-lanmao/workspace/jlj/uc/decompile/res/drawable-hdpi/app_icon.png
+七月 24, 2018 6:14:56 下午 java.util.logging.LogManager$RootLogger log
+信息:       Src: (xhdpi) /mnt/hgfs/U8/U8SDKTool-Win-lanmao/workspace/jlj/uc/decompile/res/drawable-xhdpi/app_icon.png
+七月 24, 2018 6:14:56 下午 java.util.logging.LogManager$RootLogger log
+信息:       Src: (xxhdpi) /mnt/hgfs/U8/U8SDKTool-Win-lanmao/workspace/jlj/uc/decompile/res/drawable-xxhdpi/app_icon.png
+七月 24, 2018 6:14:56 下午 java.util.logging.LogManager$RootLogger log
+信息:       Src: (xxxhdpi) /mnt/hgfs/U8/U8SDKTool-Win-lanmao/workspace/jlj/uc/decompile/res/drawable-xxxhdpi/app_icon.png
+七月 24, 2018 6:14:56 下午 java.util.logging.LogManager$RootLogger log
+信息:     drawable/de.png
+七月 24, 2018 6:14:56 下午 java.util.logging.LogManager$RootLogger log
+信息:       Src: (hdpi) /mnt/hgfs/U8/U8SDKTool-Win-lanmao/workspace/jlj/uc/decompile/res/drawable-hdpi/de.png
+七月 24, 2018 6:14:56 下午 java.util.logging.LogManager$RootLogger log
+信息:     drawable/ic_launcher.png
+七月 24, 2018 6:14:56 下午 java.util.logging.LogManager$RootLogger log
+信息:       Src: (mdpi-v4) /mnt/hgfs/U8/U8SDKTool-Win-lanmao/workspace/jlj/uc/decompile/res/drawable-mdpi-v4/ic_launcher.png
+七月 24, 2018 6:14:56 下午 java.util.logging.LogManager$RootLogger log
+信息:       Src: (xhdpi-v4) /mnt/hgfs/U8/U8SDKTool-Win-lanmao/workspace/jlj/uc/decompile/res/drawable-xhdpi-v4/ic_launcher.png
+七月 24, 2018 6:14:56 下午 java.util.logging.LogManager$RootLogger log
+信息:   Type layout
+七月 24, 2018 6:14:56 下午 java.util.logging.LogManager$RootLogger log
+信息:     layout/demo_splash.xml
+七月 24, 2018 6:14:56 下午 java.util.logging.LogManager$RootLogger log
+信息:       Src: () /mnt/hgfs/U8/U8SDKTool-Win-lanmao/workspace/jlj/uc/decompile/res/layout/demo_splash.xml
+七月 24, 2018 6:14:56 下午 java.util.logging.LogManager$RootLogger log
+信息:   Type values
+七月 24, 2018 6:14:56 下午 java.util.logging.LogManager$RootLogger log
+信息:     values/public.xml
+七月 24, 2018 6:14:56 下午 java.util.logging.LogManager$RootLogger log
+信息:       Src: () /mnt/hgfs/U8/U8SDKTool-Win-lanmao/workspace/jlj/uc/decompile/res/values/public.xml
+七月 24, 2018 6:14:56 下午 java.util.logging.LogManager$RootLogger log
+信息:     values/strings.xml
+七月 24, 2018 6:14:56 下午 java.util.logging.LogManager$RootLogger log
+信息:       Src: () /mnt/hgfs/U8/U8SDKTool-Win-lanmao/workspace/jlj/uc/decompile/res/values/strings.xml
+七月 24, 2018 6:14:56 下午 java.util.logging.LogManager$RootLogger log
+信息:     values/styles.xml
+七月 24, 2018 6:14:56 下午 java.util.logging.LogManager$RootLogger log
+信息:       Src: () /mnt/hgfs/U8/U8SDKTool-Win-lanmao/workspace/jlj/uc/decompile/res/values/styles.xml
+七月 24, 2018 6:14:57 下午 java.util.logging.LogManager$RootLogger log
+信息:       Src: (v11) /mnt/hgfs/U8/U8SDKTool-Win-lanmao/workspace/jlj/uc/decompile/res/values-v11/styles.xml
+七月 24, 2018 6:14:57 下午 java.util.logging.LogManager$RootLogger log
+信息:       Src: (v14) /mnt/hgfs/U8/U8SDKTool-Win-lanmao/workspace/jlj/uc/decompile/res/values-v14/styles.xml
+七月 24, 2018 6:14:57 下午 java.util.logging.LogManager$RootLogger log
+信息:       Src: (v21) /mnt/hgfs/U8/U8SDKTool-Win-lanmao/workspace/jlj/uc/decompile/res/values-v21/styles.xml
+七月 24, 2018 6:14:57 下午 java.util.logging.LogManager$RootLogger log
+信息: Including resources from package: /tmp/1.apk
+七月 24, 2018 6:14:57 下午 java.util.logging.LogManager$RootLogger log
+信息: applyFileOverlay for drawable
+七月 24, 2018 6:14:57 下午 java.util.logging.LogManager$RootLogger log
+信息: applyFileOverlay for layout
+七月 24, 2018 6:14:57 下午 java.util.logging.LogManager$RootLogger log
+信息: applyFileOverlay for anim
+七月 24, 2018 6:14:57 下午 java.util.logging.LogManager$RootLogger log
+信息: applyFileOverlay for animator
+七月 24, 2018 6:14:57 下午 java.util.logging.LogManager$RootLogger log
+信息: applyFileOverlay for interpolator
+七月 24, 2018 6:14:57 下午 java.util.logging.LogManager$RootLogger log
+信息: applyFileOverlay for transition
+七月 24, 2018 6:14:57 下午 java.util.logging.LogManager$RootLogger log
+信息: applyFileOverlay for xml
+七月 24, 2018 6:14:57 下午 java.util.logging.LogManager$RootLogger log
+信息: applyFileOverlay for raw
+七月 24, 2018 6:14:57 下午 java.util.logging.LogManager$RootLogger log
+信息: applyFileOverlay for color
+七月 24, 2018 6:14:57 下午 java.util.logging.LogManager$RootLogger log
+信息: applyFileOverlay for menu
+七月 24, 2018 6:14:57 下午 java.util.logging.LogManager$RootLogger log
+信息: applyFileOverlay for font
+七月 24, 2018 6:14:57 下午 java.util.logging.LogManager$RootLogger log
+信息: applyFileOverlay for mipmap
+七月 24, 2018 6:14:57 下午 java.util.logging.LogManager$RootLogger log
+信息: Processing image: /mnt/hgfs/U8/U8SDKTool-Win-lanmao/workspace/jlj/uc/decompile/res/drawable-xhdpi-v4/app_banner.png
+七月 24, 2018 6:14:57 下午 java.util.logging.LogManager$RootLogger log
+信息: Processing image: /mnt/hgfs/U8/U8SDKTool-Win-lanmao/workspace/jlj/uc/decompile/res/drawable-ldpi/app_icon.png
+七月 24, 2018 6:14:57 下午 java.util.logging.LogManager$RootLogger log
+信息:     (processed image /mnt/hgfs/U8/U8SDKTool-Win-lanmao/workspace/jlj/uc/decompile/res/drawable-ldpi/app_icon.png: 99% size of source)
+七月 24, 2018 6:14:57 下午 java.util.logging.LogManager$RootLogger log
+信息: Processing image: /mnt/hgfs/U8/U8SDKTool-Win-lanmao/workspace/jlj/uc/decompile/res/drawable-mdpi/app_icon.png
+七月 24, 2018 6:14:57 下午 java.util.logging.LogManager$RootLogger log
+信息: Processing image: /mnt/hgfs/U8/U8SDKTool-Win-lanmao/workspace/jlj/uc/decompile/res/drawable-hdpi/app_icon.png
+七月 24, 2018 6:14:57 下午 java.util.logging.LogManager$RootLogger log
+信息: Processing image: /mnt/hgfs/U8/U8SDKTool-Win-lanmao/workspace/jlj/uc/decompile/res/drawable-xhdpi/app_icon.png
+七月 24, 2018 6:14:57 下午 java.util.logging.LogManager$RootLogger log
+信息:     (processed image /mnt/hgfs/U8/U8SDKTool-Win-lanmao/workspace/jlj/uc/decompile/res/drawable-mdpi/app_icon.png: 99% size of source)
+七月 24, 2018 6:14:57 下午 java.util.logging.LogManager$RootLogger log
+信息: Processing image: /mnt/hgfs/U8/U8SDKTool-Win-lanmao/workspace/jlj/uc/decompile/res/drawable-xxhdpi/app_icon.png
+七月 24, 2018 6:14:57 下午 java.util.logging.LogManager$RootLogger log
+信息:     (processed image /mnt/hgfs/U8/U8SDKTool-Win-lanmao/workspace/jlj/uc/decompile/res/drawable-hdpi/app_icon.png: 100% size of source)
+七月 24, 2018 6:14:57 下午 java.util.logging.LogManager$RootLogger log
+信息: Processing image: /mnt/hgfs/U8/U8SDKTool-Win-lanmao/workspace/jlj/uc/decompile/res/drawable-xxxhdpi/app_icon.png
+七月 24, 2018 6:14:57 下午 java.util.logging.LogManager$RootLogger log
+信息:     (processed image /mnt/hgfs/U8/U8SDKTool-Win-lanmao/workspace/jlj/uc/decompile/res/drawable-xhdpi/app_icon.png: 100% size of source)
+七月 24, 2018 6:14:57 下午 java.util.logging.LogManager$RootLogger log
+信息: Processing image: /mnt/hgfs/U8/U8SDKTool-Win-lanmao/workspace/jlj/uc/decompile/res/drawable-hdpi/de.png
+七月 24, 2018 6:14:57 下午 java.util.logging.LogManager$RootLogger log
+信息:     (processed image /mnt/hgfs/U8/U8SDKTool-Win-lanmao/workspace/jlj/uc/decompile/res/drawable-xhdpi-v4/app_banner.png: 100% size of source)
+七月 24, 2018 6:14:57 下午 java.util.logging.LogManager$RootLogger log
+信息: Processing image: /mnt/hgfs/U8/U8SDKTool-Win-lanmao/workspace/jlj/uc/decompile/res/drawable-mdpi-v4/ic_launcher.png
+七月 24, 2018 6:14:57 下午 java.util.logging.LogManager$RootLogger log
+信息:     (processed image /mnt/hgfs/U8/U8SDKTool-Win-lanmao/workspace/jlj/uc/decompile/res/drawable-mdpi-v4/ic_launcher.png: 100% size of source)
+七月 24, 2018 6:14:57 下午 java.util.logging.LogManager$RootLogger log
+信息: Processing image: /mnt/hgfs/U8/U8SDKTool-Win-lanmao/workspace/jlj/uc/decompile/res/drawable-xhdpi-v4/ic_launcher.png
+七月 24, 2018 6:14:57 下午 java.util.logging.LogManager$RootLogger log
+信息:     (processed image /mnt/hgfs/U8/U8SDKTool-Win-lanmao/workspace/jlj/uc/decompile/res/drawable-xxhdpi/app_icon.png: 99% size of source)
+七月 24, 2018 6:14:57 下午 java.util.logging.LogManager$RootLogger log
+信息:     (processed image /mnt/hgfs/U8/U8SDKTool-Win-lanmao/workspace/jlj/uc/decompile/res/drawable-xhdpi-v4/ic_launcher.png: 100% size of source)
+七月 24, 2018 6:14:57 下午 java.util.logging.LogManager$RootLogger log
+信息:     (processed image /mnt/hgfs/U8/U8SDKTool-Win-lanmao/workspace/jlj/uc/decompile/res/drawable-xxxhdpi/app_icon.png: 99% size of source)
+七月 24, 2018 6:14:57 下午 java.util.logging.LogManager$RootLogger log
+信息:     (processed image /mnt/hgfs/U8/U8SDKTool-Win-lanmao/workspace/jlj/uc/decompile/res/drawable-hdpi/de.png: 98% size of source)
+七月 24, 2018 6:14:57 下午 java.util.logging.LogManager$RootLogger log
+信息:     (new resource id app_banner from xhdpi-v4/drawable/app_banner.png #generated)
+七月 24, 2018 6:14:57 下午 java.util.logging.LogManager$RootLogger log
+信息:     (new resource id app_icon from ldpi/drawable/app_icon.png #generated)
+七月 24, 2018 6:14:57 下午 java.util.logging.LogManager$RootLogger log
+信息:     (new resource id app_icon from mdpi/drawable/app_icon.png #generated)
+七月 24, 2018 6:14:57 下午 java.util.logging.LogManager$RootLogger log
+信息:     (new resource id app_icon from hdpi/drawable/app_icon.png #generated)
+七月 24, 2018 6:14:57 下午 java.util.logging.LogManager$RootLogger log
+信息:     (new resource id app_icon from xhdpi/drawable/app_icon.png #generated)
+七月 24, 2018 6:14:57 下午 java.util.logging.LogManager$RootLogger log
+信息:     (new resource id app_icon from xxhdpi/drawable/app_icon.png #generated)
+七月 24, 2018 6:14:57 下午 java.util.logging.LogManager$RootLogger log
+信息:     (new resource id app_icon from xxxhdpi/drawable/app_icon.png #generated)
+七月 24, 2018 6:14:57 下午 java.util.logging.LogManager$RootLogger log
+信息:     (new resource id de from hdpi/drawable/de.png #generated)
+七月 24, 2018 6:14:57 下午 java.util.logging.LogManager$RootLogger log
+信息:     (new resource id ic_launcher from mdpi-v4/drawable/ic_launcher.png #generated)
+七月 24, 2018 6:14:57 下午 java.util.logging.LogManager$RootLogger log
+信息:     (new resource id ic_launcher from xhdpi-v4/drawable/ic_launcher.png #generated)
+七月 24, 2018 6:14:57 下午 java.util.logging.LogManager$RootLogger log
+信息:     (new resource id demo_splash from /mnt/hgfs/U8/U8SDKTool-Win-lanmao/workspace/jlj/uc/decompile/res/layout/demo_splash.xml)
+七月 24, 2018 6:14:57 下午 java.util.logging.LogManager$RootLogger log
+信息: Creating '/tmp/APKTOOL3163885497940813913.tmp'
+七月 24, 2018 6:14:57 下午 java.util.logging.LogManager$RootLogger log
+信息: Writing all files...
+七月 24, 2018 6:14:57 下午 java.util.logging.LogManager$RootLogger log
+信息:       'AndroidManifest.xml' (compressed 76%)
+七月 24, 2018 6:14:57 下午 java.util.logging.LogManager$RootLogger log
+信息:       'res/drawable-hdpi/app_icon.png' (not compressed)
+七月 24, 2018 6:14:57 下午 brut.androlib.res.AndrolibResources aapt1Package
+详细: command ran: 
+七月 24, 2018 6:14:57 下午 brut.androlib.res.AndrolibResources aapt1Package
+详细: [/tmp/brut_util_Jar_510292514273263311.tmp, p, -v, --forced-package-id, 127, --min-sdk-version, 14, --target-sdk-version, 22, --version-code, 20180704, --version-name, 1.0.0, --no-version-vectors, -F, /tmp/APKTOOL3163885497940813913.tmp, -0, arsc, -0, asset, -0, resource, -0, png, -0, arsc, -I, /tmp/1.apk, -S, /mnt/hgfs/U8/U8SDKTool-Win-lanmao/workspace/jlj/uc/decompile/res, -M, /mnt/hgfs/U8/U8SDKTool-Win-lanmao/workspace/jlj/uc/decompile/AndroidManifest.xml]
+七月 24, 2018 6:14:57 下午 java.util.logging.LogManager$RootLogger log
+信息:       'res/drawable-hdpi/de.png' (not compressed)
+七月 24, 2018 6:14:57 下午 java.util.logging.LogManager$RootLogger log
+信息:       'res/drawable-ldpi/app_icon.png' (not compressed)
+七月 24, 2018 6:14:57 下午 java.util.logging.LogManager$RootLogger log
+信息:       'res/drawable-mdpi-v4/ic_launcher.png' (not compressed)
+七月 24, 2018 6:14:57 下午 java.util.logging.LogManager$RootLogger log
+信息:       'res/drawable-mdpi/app_icon.png' (not compressed)
+七月 24, 2018 6:14:57 下午 java.util.logging.LogManager$RootLogger log
+信息:       'res/drawable-xhdpi-v4/app_banner.png' (not compressed)
+七月 24, 2018 6:14:57 下午 java.util.logging.LogManager$RootLogger log
+信息:       'res/drawable-xhdpi-v4/ic_launcher.png' (not compressed)
+七月 24, 2018 6:14:57 下午 java.util.logging.LogManager$RootLogger log
+信息:       'res/drawable-xhdpi/app_icon.png' (not compressed)
+七月 24, 2018 6:14:57 下午 java.util.logging.LogManager$RootLogger log
+信息:       'res/drawable-xxhdpi/app_icon.png' (not compressed)
+七月 24, 2018 6:14:57 下午 java.util.logging.LogManager$RootLogger log
+信息:       'res/drawable-xxxhdpi/app_icon.png' (not compressed)
+七月 24, 2018 6:14:57 下午 java.util.logging.LogManager$RootLogger log
+信息:       'res/layout/demo_splash.xml' (compressed 50%)
+七月 24, 2018 6:14:57 下午 java.util.logging.LogManager$RootLogger log
+信息:       'resources.arsc' (not compressed)
+七月 24, 2018 6:14:57 下午 brut.androlib.Androlib buildLibrary
+信息: Copying libs... (/lib)
+七月 24, 2018 6:14:57 下午 java.util.logging.LogManager$RootLogger log
+信息: Generated 13 files
+七月 24, 2018 6:14:57 下午 java.util.logging.LogManager$RootLogger log
+信息: Included 0 files from jar/zip files.
+七月 24, 2018 6:14:57 下午 java.util.logging.LogManager$RootLogger log
+信息: Checking for deleted files
+七月 24, 2018 6:14:57 下午 java.util.logging.LogManager$RootLogger log
+信息: Done!
+七月 24, 2018 6:15:00 下午 brut.androlib.Androlib buildApk
+信息: Building apk file...
+七月 24, 2018 6:17:13 下午 brut.androlib.Androlib buildUnknownFiles
+信息: Copying unknown files/dir...
+七月 24, 2018 6:18:35 下午 brut.androlib.Androlib copyUnknownFiles
+详细: Copying unknown file android-support-multidex.version.txt with method 8
+七月 24, 2018 6:19:08 下午 brut.androlib.Androlib build
+信息: Built apk...
+2018-07-24 18:19:08,747: 
+
+2018-07-24 18:19:08,748: 
+*******************
+
+2018-07-24 18:19:08,748: 
+
+2018-07-24 18:19:09,240: 
+*******CMD*******
+
+2018-07-24 18:19:09,241: 
+
+2018-07-24 18:19:09,241: "/mnt/hgfs/U8/U8SDKTool-Win-lanmao/tool/liunx/aapt" add "/mnt/hgfs/U8/U8SDKTool-Win-lanmao/workspace/jlj/uc/output.apk" gametest.txt subroot/gametest.txt
+2018-07-24 18:19:09,242: 
+
+2018-07-24 18:19:09,242: 
+
+2018-07-24 18:19:09,243: 
+
+2018-07-24 18:19:09,244: Unable to add 'subroot/gametest.txt' to '/mnt/hgfs/U8/U8SDKTool-Win-lanmao/workspace/jlj/uc/output.apk': already exists in archive
+ 'gametest.txt' as 'gametest.txt'...
+ 'subroot/gametest.txt' as 'gametest.txt'...
+2018-07-24 18:19:09,244: 
+
+2018-07-24 18:19:09,245: 
+*******************
+
+2018-07-24 18:19:09,245: 
+
+2018-07-24 18:19:09,245: the output apk format string is jlj_{channelName}.apk
+2018-07-24 18:19:09,246: 
+
+2018-07-24 18:19:09,246: the versionCode is 20180704;versionName is 1.0.0
+2018-07-24 18:19:09,246: 
+
+2018-07-24 18:19:19,534: 
+*******CMD*******
+
+2018-07-24 18:19:19,534: 
+
+2018-07-24 18:19:19,534: "/mnt/hgfs/U8/U8SDKTool-Win-lanmao/tool/liunx/zipalign" -f 4 "/mnt/hgfs/U8/U8SDKTool-Win-lanmao/workspace/jlj/uc/output.apk" "/mnt/hgfs/U8/U8SDKTool-Win-lanmao/output/jlj/uc/jlj_uc.apk"
+2018-07-24 18:19:19,534: 
+
+2018-07-24 18:19:19,535: 
+
+2018-07-24 18:19:19,535: 
+
+2018-07-24 18:19:19,535: 
+*******************
+
+2018-07-24 18:19:19,535: 
+
+2018-07-24 18:19:19,573: 密钥存储文件是 games/game1/keystore/unisdk.keystore
+2018-07-24 18:19:19,574: 
+
+2018-07-24 18:19:32,840: 
+*******CMD*******
+
+2018-07-24 18:19:32,841: 
+
+2018-07-24 18:19:32,841: java -jar "/mnt/hgfs/U8/U8SDKTool-Win-lanmao/tool/liunx/lib/apksigner.jar" sign --ks "/mnt/hgfs/U8/U8SDKTool-Win-lanmao/games/game1/keystore/unisdk.keystore" --key-pass pass:"123456" --ks-key-alias "demokey.keystore" --ks-pass pass:"123456" "/mnt/hgfs/U8/U8SDKTool-Win-lanmao/output/jlj/uc/jlj_uc.apk" 
+2018-07-24 18:19:32,842: 
+
+2018-07-24 18:19:32,842: 
+
+2018-07-24 18:19:32,843: 
+
+2018-07-24 18:19:32,843: 
+*******************
+
+2018-07-24 18:19:32,844: 
+
+2018-07-24 18:19:32,844: 游戏 jlj 渠道 uc 打包成功.
+2018-07-24 18:19:32,844: 
+

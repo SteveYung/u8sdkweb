@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    
+    <params>
+        <param name="Bugly_AppID" value="900004591" required="1" showName="AppID" desc="腾讯Bugly日志插件" bWriteInManifest="0" bWriteInClient="1" />
+        <param name="Bugly_AppKey" value="9BOHhQUKJwwSZ6RE" required="1" showName="AppKey" desc="腾讯Bugly日志插件" bWriteInManifest="0" bWriteInClient="1" /> 
+
+    </params>
+    
+    <operations>
+        <operation step="1" type="mergeManifest" from="SDKManifest.xml" to="AndroidManifest.xml" />
+        <operation step="2" type="copyRes" from="assets" to="assets" />
+        <operation step="3" type="copyRes" from="libs" to="lib" />
+        <operation step="4" type="copyRes" from="res" to="res" />
+    </operations>
+    
+    <plugins>
+
+    </plugins>
+
+    <version>
+        <name>腾讯Bugly插件</name>
+        <versionCode>1</versionCode>
+        <versionName>1.2.0.1</versionName>
+    </version>    
+    
+</config>

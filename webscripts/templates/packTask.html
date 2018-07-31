@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>游戏渠道包管理</title>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <link href="/css/font-awesome.css" rel="stylesheet">
+    <link href="/css/admin.css" rel="stylesheet">
+    <link href='{{url_for("static", filename="layui/css/layui.css")}}' rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="channel">
+        <table class="layui-table" lay-data="{ url:'/packTaskdata', page:true, id:'idTest',cellMinWidth:100}" lay-filter="demo">
+            <thead>
+                <tr>
+                    <th lay-data="{field:'id', width:150, sort: true, fixed: true}">任务ID</th>
+                    <th lay-data="{field:'game'}">游戏名称</th>
+                    <th lay-data="{field:'channel', sort: true}">渠道名称</th>
+                    <th lay-data="{field:'channelVersion'}">SDK版本</th>
+                    <th lay-data="{field:'gameVersion'}">游戏版本</th>
+                    <th lay-data="{field:'startTime'}">启动时间</th>
+                    <th lay-data="{field:'founder'}">创建人</th>
+                    <th lay-data="{field:'state'}">打包状况</th>
+                    <th lay-data="{field:'city', toolbar: '#detail'}">日志</th>
+                    <th lay-data="{fixed: 'right', width:300, align:'center', toolbar: '#barDemo'}">渠道包操作</th>
+                </tr>
+            </thead>
+        </table>
+
+
+    </div>
+    <!--channel-->
+    <script src='{{url_for("static", filename="js/jquery-3.1.1.min.js")}}' charset="utf-8"></script>
+    <script src='{{url_for("static", filename="layui/layui.js")}}' charset="utf-8"></script>
+
+    <script type="text/html" id="detail">
+        <a class="layui-btn layui-btn-xs layui-btn-primary" lay-event="detailed">
+            <i class="fa fa-indent mr5"></i>详情
+        </a>
+    </script>
+
+    <script type="text/html" id="barDemo">
+        <a class="layui-btn layui-btn-xs layui-btn-normal" lay-event="download">
+            <i class="fa fa-arrow-down mr5"></i>下载
+        </a>
+        <a class="layui-btn layui-btn-xs layui-btn-disabled " lay-event="del">
+            <i class="fa fa-trash-o mr5"></i>删除
+        </a>
+    </script>
+
+    <script>
+        layui.use('table', function() {
+            var table = layui.table;
+            //监听工具条
+            table.on('tool(demo)', function(obj) {
+                var data = obj.data;
+                if (obj.event === 'download') {
+                    window.open(data.link);
+                } else if (obj.event === 'detailed') {
+                    window.open(data.journal);
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>

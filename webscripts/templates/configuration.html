@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>游戏渠道参数配置</title>
+    <link href="/css/font-awesome.css" rel="stylesheet">
+    <link href='{{url_for("static", filename="layui/css/layui.css")}}' rel="stylesheet">
+</head>
+
+<style>
+    .config,
+    .config_params,
+    .config_operations,
+    .config_sdkParams {
+        width: 98vw;
+    }
+</style>
+
+<body>
+    <blockquote class="layui-elem-quote layui-text">
+        游戏接入渠道主要信息
+    </blockquote>
+    <div class="config">
+        <table class="layui-table" lay-data="{url:'/configurationdata/{{game}}/{{channel}}', id:'channelc'}" lay-filter="channelc">
+            <thead>
+                <tr>
+                    <th lay-data="{field:'key',sort: true}">参数名</th>
+                    <th lay-data="{field:'illustrate'}">说明</th>
+                    <th lay-data="{field:'value', sort: true, edit: 'text'}">参数值</th>
+                    <th lay-data="{fixed: 'right',align:'center', toolbar: '#dell'}"></th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+    <blockquote class="layui-elem-quote layui-text">
+        params附加信息
+    </blockquote>
+    <div class="config_params">
+        <table class="layui-table" lay-data="{url:'/configurationdataSub/{{game}}/{{channel}}/params', id:'channelc_params'}" lay-filter="channelc_params">
+            <thead>
+                <tr>
+                    <th lay-data="{field:'key',sort: true, edit: 'text'}">参数名</th>
+                    <th lay-data="{field:'illustrate'}">说明</th>
+                    <th lay-data="{field:'value', sort: true, edit: 'text'}">参数值</th>
+                    <th lay-data="{fixed: 'right',align:'center', toolbar: '#dell'}"></th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+
+    <blockquote class="layui-elem-quote layui-text">
+        operations附加信息
+    </blockquote>
+    <div class="config_operations">
+        <table class="layui-table" lay-data="{url:'/configurationdataSub/{{game}}/{{channel}}/operations', id:'channelc_operations'}" lay-filter="channelc_operations">
+            <thead>
+                <tr>
+                    <th lay-data="{field:'type',sort: true, edit: 'text'}">类型</th>
+                    <th lay-data="{field:'from', sort: true, edit: 'text'}">开始地址</th>
+                    <th lay-data="{field:'to', sort: true, edit: 'text'}">结束地址</th>
+                    <th lay-data="{fixed: 'right',align:'center', toolbar: '#dell'}"></th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+
+    <blockquote class="layui-elem-quote layui-text">
+        sdkParams附加信息
+    </blockquote>
+    <div class="config_sdkParams">
+        <table class="layui-table" lay-data="{url:'/configurationdataSub/{{game}}/{{channel}}/sdkParams', id:'channelc_sdkParams'}" lay-filter="channelc_sdkParams">
+            <thead>
+                <tr>
+                    <th lay-data="{field:'key',sort: true, edit: 'text'}">参数名</th>
+                    <th lay-data="{field:'illustrate'}">说明</th>
+                    <th lay-data="{field:'value', sort: true, edit: 'text'}">参数值</th>
+                    <th lay-data="{fixed: 'right',align:'center', toolbar: '#dell'}"></th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+
+    <blockquote class="layui-elem-quote layui-text">
+        U8后台添加渠道所需的信息
+    </blockquote>
+    <div class="config_sdkParams">
+        <table class="layui-table" lay-data="{url:'/configurationdataSub/{{game}}/{{channel}}/sdkParams', id:'channelc_sdkParams'}" lay-filter="channelc_sdkParams">
+            <thead>
+                <tr>
+                    <th lay-data="{field:'key',sort: true, edit: 'text'}">参数名</th>
+                    <th lay-data="{field:'illustrate'}">说明</th>
+                    <th lay-data="{field:'value', sort: true, edit: 'text'}">参数值</th>
+                    <th lay-data="{fixed: 'right',align:'center', toolbar: '#dell'}"></th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+
+</body>
+
+</html>
+
+<script src='{{url_for("static", filename="js/jquery-3.1.1.min.js")}}' charset="utf-8"></script>
+<script src='{{url_for("static", filename="layui/layui.js")}}' charset="utf-8"></script>
+
+<script type="text/html" id="dell">
+    <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
+    <a class="layui-btn layui-btn-xs" lay-event="upda">更新</a>
+</script>
+
+<script>
+    layui.use('table', function() {
+        var table = layui.table;
+        // //监听
+        monitor('channelc');
+        monitor('channelc_params');
+        monitor('channelc_operations');
+        monitor('channelc_sdkParams');
+    });
+
+    setTimeout(function() {
+        //加载完成后就显示添加栏目
+        // buttonup('config');
+        buttonup('config_params');
+        buttonup('config_operations');
+        buttonup('config_sdkParams');
+    }, 2000)
+
+    function buttonup(uploadtt) {
+        var oBtn = document.querySelectorAll('.' + uploadtt + ' .layui-form .layui-table-box .layui-table-body .layui-table tbody tr');
+        var htmla = '<td data-field="key" data-edit="text"><div class="layui-table-cell laytable-cell-1-key"></div></td><td data-field="illustrate"><div class="layui-table-cell laytable-cell-1-illustrate">' + uploadtt + '信息添加券</div></td><td data-field="value" data-edit="text"><div class="layui-table-cell laytable-cell-1-value"></div></td><td data-field="3" align="center" data-off="true"><div class="layui-table-cell laytable-cell-1-3"><a class="layui-btn layui-btn-xs ' + uploadtt + 'Sub" lay-event="upup">添加</a></div></td>';
+        var htmlb = '<td data-field="type" data-edit="text"><div class="layui-table-cell laytable-cell-3-type"></div></td><td data-field="from" data-edit="text"><div class="layui-table-cell laytable-cell-3-from"></div></td><td data-field="to" data-edit="text"><div class="layui-table-cell laytable-cell-3-to"></div></td><td data-field="3" align="center" data-off="true"><div class="layui-table-cell laytable-cell-3-3"><a class="layui-btn layui-btn-xs" ' + uploadtt + 'Sub" lay-event="upup">添加</a></div></td>';
+        if (uploadtt == 'config_operations') {
+            oBtn[((oBtn.length) / 2) - 1].innerHTML = htmlb
+        } else {
+            oBtn[((oBtn.length) / 2) - 1].innerHTML = htmla
+        }
+
+    }
+
+    function monitor(name) {
+        var table = layui.table;
+        //监听单元格编辑
+        table.on('edit(' + name + ')', function(obj) {
+            var value = obj.value, //得到修改后的值
+                data = obj.data, //得到所在行所有键值
+                field = obj.field; //得到字段
+            obj.field = value
+        });
+        //监听工具条
+        table.on('tool(' + name + ')', function(obj) {
+            var data = obj.data;
+            if (obj.event === 'del') {
+                layer.confirm('真的删除行么（这是个假的删除）', function(index) {
+                    obj.del();
+                    layer.close(index);
+                });
+            } else if (obj.event === 'upup') {
+                if (name == 'channelc_operations') {
+                    // layer.msg(data.type + ':' + data.from + ':' + data.to + ' 的上传操作');
+                    dataa = {
+                        type: data.type,
+                        from: data.from,
+                        to: data.to,
+                        game: '{{game}}',
+                        channel: '{{channel}}',
+                        subb: 'channel_operations'
+                    };
+                    (dataa.type) ? updata_post(dataa, 'channelupdata'): layer.msg('可否先写个类型再来');
+
+                } else {
+                    // layer.msg(data.key + ':' + data.value + ' 的上传操作');
+                    dataa = {
+                        key: data.key,
+                        value: data.value,
+                        game: '{{game}}',
+                        channel: '{{channel}}',
+                        subb: name.substring(0, 7) + name.substring(8, name.length) //去除里面的c字符
+                    };
+                    (dataa.key) ? updata_post(dataa, 'channelupdata'): layer.msg('可否先写个key再来');
+                }
+            } else if (obj.event === 'upda') {
+                // 数据修改（未完成）
+                if (name == 'channelc_operations') {
+                    dataa = {
+                        type: data.type,
+                        from: data.from,
+                        to: data.to,
+                        game: '{{game}}',
+                        channel: '{{channel}}',
+                        subb: 'channel_operations'
+                    };
+                    (dataa.type) ? updata_post(dataa, 'channelmodify'): layer.msg('可否先写个类型再来');
+                } else {
+                    dataa = {
+                        key: data.key,
+                        value: data.value,
+                        game: '{{game}}',
+                        channel: '{{channel}}',
+                        subb: name.substring(0, 7) + name.substring(8, name.length) //去除里面的c字符
+                    };
+                    (dataa.key) ? updata_post(dataa, 'channelmodify'): layer.msg('可否先写个key再来');
+                }
+            }
+        });
+    }
+
+    function updata_post(dataa, uurl) {
+        // console.log(uurl);
+        $.post("/" + uurl, dataa,
+            function(data, status) {
+                if (data == 'True' && status == 'success') {
+                    window.location.reload()
+                } else {
+                    layer.msg(data);
+                }
+            });
+    }
+</script>

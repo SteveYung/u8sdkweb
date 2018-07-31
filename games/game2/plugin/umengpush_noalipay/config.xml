@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    
+    <params>
+        <param name="UMENG_APPKEY" value="567d52f867e58e0d19001907" required="1" showName="AppKey" desc="umeng push" bWriteInManifest="1" bWriteInClient="0" />
+        <param name="UMENG_MESSAGE_SECRET" value="0063b4627d147386057a3fccbb5ff18e" required="1" showName="MessageSecret" desc="umeng push" bWriteInManifest="1" bWriteInClient="0" />
+        <param name="UMENG_CHANNEL" value="10" required="1" showName="UMENG_CHANNEL" desc="umeng push" bWriteInManifest="1" bWriteInClient="0" />
+        
+        <param name="UMENG_NOTIFY_FOREGROUND" value="false" required="1" showName="应用在前台的时候，是否显示通知" desc="umeng push" bWriteInManifest="0" bWriteInClient="1" />
+         
+    </params>
+    
+    <operations>
+        <operation step="1" type="mergeManifest" from="SDKManifest.xml" to="AndroidManifest.xml" />
+        <operation step="2" type="copyRes" from="assets" to="assets" />
+        <operation step="3" type="copyRes" from="libs" to="lib" />
+        <operation step="4" type="copyRes" from="res" to="res" />        
+        <operation step="5" type="script" from="script.py"/>
+    </operations>
+    
+    <plugins>
+        <plugin name="com.u8.sdk.UMengPush" type="3" desc="推送接口"/>
+    </plugins>
+    
+    <version>
+        <name>友盟推送插件(去UTDID版本)</name>
+        <versionCode>1</versionCode>
+        <versionName>2.6.0</versionName>
+    </version>    
+    
+</config>

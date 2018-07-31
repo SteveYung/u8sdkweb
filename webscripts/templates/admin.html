@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>出包管理平台</title>
+    <link href='{{url_for("static", filename="layui/css/layui.css")}}' rel="stylesheet">
+    <link href='{{url_for("static", filename="layui/css/css.css")}}' rel="stylesheet">
+</head>
+
+<body>
+    <div id="index">
+        <div class="layui-layout layui-layout-admin">
+
+            <!-- 顶部导航区域-->
+            <div class="layui-header header header-demo">
+                <div class="layui-header header header-demo">
+                    <ul class="layui-nav">
+
+                        <li class="layui-nav-item">
+                            <a href="">查看消息<span class="layui-badge">9</span></a>
+                        </li>
+
+                        <li class="layui-nav-item">
+                            <a href=""><img src="/portrait.jpg" class="layui-nav-img">欢迎您，脚本哥</a>
+                            <dl class="layui-nav-child layui-this">
+                                <dd><a href="javascript:;">修改信息</a></dd>
+                                <dd><a href="javascript:;">安全管理</a></dd>
+                                <dd><a href="javascript:;">退了</a></dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <a href="http://www.maowan.com/ "><img class="logo" src='{{url_for("static", filename="layui/image/logo.png")}}' alt=""></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="layui-side layui-bg-rgba">
+                <div class="layui-side-scroll">
+                    <!-- 左侧导航区域-->
+                    <ul class="layui-nav layui-nav-tree site-demo-nav">
+
+                        <li class="layui-nav-item">
+                            <a class="" href="javascript:;"><i class="layui-icon">&#xe68e;</i>打包<span class="layui-nav-more"></span></a>
+                            <dl class="layui-nav-child layui-this">
+                                <dd><a href="javascript:;" kit-target="" data-options="{url:'{{url_for('static',filename='start_packing')}}',title:'开始打包',id:'1'}">开始打包</a></dd>
+                                <dd><a href="javascript:;" kit-target="" data-options="{url:'{{url_for('static',filename='packTask')}}',title:'打包任务',id:'2'}">打包任务</a></dd>
+                                <!-- <dd><a href="javascript:;" kit-target="" data-options="{url:'{{url_for('static',filename='html/game_version_management.html')}}',title:'游戏版本管理',id:'3'}">游戏版本管理</a></dd> -->
+                            </dl>
+                        </li>
+
+                        <!-- <li class="layui-nav-item">
+                            <a class="" href="javascript:;"><i class="layui-icon">&#xe857;</i>下载<span class="layui-nav-more"></span></a>
+                            <dl class="layui-nav-child layui-this">
+                                <dd><a href="javascript:;" kit-target="" data-options="{url:'{{url_for('static',filename='html/android_package_download.html')}}',title:'Android包下载',id:'4'}">Android包下载</a></dd>
+                                <dd><a href="javascript:;" kit-target="" data-options="{url:'{{url_for('static',filename='html/ios_package_download.html')}}',title:'IOS包下载',id:'5'}">IOS包下载</a></dd>
+                            </dl>
+                        </li> -->
+
+                        <li class="layui-nav-item">
+                            <a class="" href="javascript:;"><i class="layui-icon"> &#xe630;</i>管理<span class="layui-nav-more"></span></a>
+                            <dl class="layui-nav-child layui-this">
+                                <dd><a href="javascript:;" kit-target="" data-options="{url:'{{url_for('static',filename='gameadmin')}}',title:'游戏管理',id:'6'}">游戏管理</a></dd>
+                                <dd><a href="javascript:;" kit-target="" data-options="{url:'{{url_for('static',filename='channeladmin')}}',title:'渠道管理',id:'7'}">渠道管理</a></dd>
+                                <!-- <dd><a href="javascript:;" kit-target="" data-options="{url:'{{url_for('static',filename='html/game_channel_package_management.html')}}',title:'游戏渠道包管理',id:'8'}">游戏渠道包管理</a></dd>
+                                <dd><a href="javascript:;" kit-target="" data-options="{url:'{{url_for('static',filename='html/icon_management.html')}}',title:'图标管理',id:'9'}">图标管理</a></dd>
+                                <dd><a href="javascript:;" kit-target="" data-options="{url:'{{url_for('static',filename='html/apk_signature_management.html')}}',title:'APK签名管理',id:'10'}">APK签名管理</a></dd>
+                                <dd><a href="javascript:;" kit-target="" data-options="{url:'{{url_for('static',filename='html/user_management.html')}}',title:'平台用户管理',id:'11'}">平台用户管理</a></dd> -->
+                            </dl>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="layui-body site-demo">
+
+                <div class="layui-tab" lay-filter="demo" lay-allowclose="true">
+                    <ul class="layui-tab-title">
+                        <li class="layui-this" lay-id="11">首页</li>
+                    </ul>
+                    <div class="layui-tab-content">
+                        <div class="layui-tab-item layui-show">
+                            <iframe scrolling="auto" frameborder="0" src="{{url_for('static',filename='sy.png')}}" style="width:100%;"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+</body>
+
+</html>
+<script src='{{url_for("static", filename="layui/layui.js")}}' charset="utf-8"></script>
+<script src='{{url_for("static", filename="layui/js.js")}}' charset="utf-8"></script>
+<script src='{{url_for("static", filename="js/jquery-3.1.1.min.js")}}' charset="utf-8"></script>
+<script src='{{url_for("static", filename="js/vue.min.js")}}' charset="utf-8"></script>
+
+<script type="text/javascript">
+    var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+    document.write(unescape("%3Cspan id='cnzz_stat_icon_1264021086'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s22.cnzz.com/z_stat.php%3Fid%3D1264021086%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script>
+    //JavaScript代码区域
+    layui.use('element', function() {
+
+        var $ = layui.jquery,
+            element = layui.element; //Tab的切换功能，切换事件监听等，需要依赖element模块
+        // 使用下面的方式需要引用jquery
+        $('.layui-this a').click(function() {
+            var options = eval('(' + $(this).data('options') + ')'); //读取options内的信息
+            var url = options.url;
+            var title = options.title;
+            element.tabAdd('demo', {
+                title: title,
+                content: '<iframe scrolling="auto" frameborder="0"  src="' + url + '"style="width:100%;"></iframe>'
+            });
+        });
+    });
+    //弹出的网页自定义
+    setInterval(function() {
+        $(".layui-tab-content .layui-tab-item iframe").css("height", document.documentElement.clientHeight - 200 + "px")
+    }, 500);
+</script>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>渠道管理</title>
+		<meta charset="UTF-8">
+		<meta content="width=device-width, initial-scale=1.0" name="viewport">
+		<meta content="ie=edge" http-equiv="X-UA-Compatible">
+		<link rel="stylesheet" href="../../../bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="../../../font-awesome/css/font-awesome.min.css" />
+		<link href="../../../layui/css/layui.css" rel="stylesheet">
+		<link rel="stylesheet" href="../../css/base.css" />
+		<link rel="stylesheet" href="../../css/admin.css" />
+	</head>
+
+	<body>
+
+		<div class="channel">
+			<table class="layui-table" lay-data="{ url:'/typesdk/public/jsop/channel.json', page:true, id:'idTest'}" lay-filter="demo">
+				<thead>
+					<tr>
+						<th lay-data="{type:'checkbox', fixed: 'left'}"></th>
+						<th lay-data="{field:'id', width:150, sort: true, fixed: true}">渠道名称</th>
+						<th lay-data="{field:'username'}">渠道编号</th>
+						<th lay-data="{field:'sex', sort: true}">最高支持版本</th>
+						<th lay-data="{field:'city'}">角标</th>
+						<th lay-data="{fixed: 'right', width:300, align:'center', toolbar: '#barDemo'}">操作</th>
+					</tr>
+				</thead>
+			</table>
+			
+			
+			<!--编辑弹窗-->
+			<div class="edit-gift" style="display: none;">
+				<!--<h3 class="tc mb30">编辑</h3>-->
+				<form  class="layui-form">
+					<div class="layui-form-item">
+					    <label class="layui-form-label">渠道名称</label>
+					    <div class="layui-input-block">
+					      <input type="text" name="title" lay-verify="title"  id="name" autocomplete="off" placeholder="渠道名称" class="layui-input">
+					    </div>
+					</div>
+					<div class="layui-form-item">
+					    <label class="layui-form-label">渠道编号</label>
+					    <div class="layui-input-block">
+					      <input type="text" name="title" lay-verify="title" id="number" autocomplete="off" placeholder="渠道编号" class="layui-input">
+					    </div>
+					</div>
+					<div class="layui-form-item">
+					    <label class="layui-form-label">最高支持版本</label>
+					    <div class="layui-input-block">
+					      <input type="text" name="title" lay-verify="title" id="maxEdition" autocomplete="off" placeholder="最高支持版本" class="layui-input">
+					    </div>
+					</div>
+					<div class="layui-upload tc">
+						<button type="button" class="layui-btn" id="test1">上传新角标</button>
+						<div class="layui-upload-list">
+							<img class="layui-upload-img" id="demo1">
+							<p id="demoText"></p>
+						</div>
+					</div>
+					
+					<div class="layui-form-item">
+					    <div class="layui-input-block">
+					    	<button type="reset" class="layui-btn layui-btn-primary">重置</button>
+					    	<button id="preservation" class="layui-btn">保存</button>
+					    </div>
+					</div>
+				</form>
+			</div>
+			
+			
+		</div><!--channel-->
+		<script src="../../js/jquery-3.1.1.min.js"></script>
+		<script src="../../../layui/layui.js"></script>
+		<script type="text/html" id="barDemo">
+		    <a class="layui-btn layui-btn-xs" lay-event="edit">
+		    	<i class="fa fa-edit mr5"></i>编辑
+		    </a>
+		    <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">
+		    	<i class="fa fa-trash-o mr5"></i>删除
+		    </a>
+		    <a class="layui-btn layui-btn-primary layui-btn-xs" lay-event="detail">
+		    	<i class="fa fa-hand-paper-o mr5"></i>使用中
+		    </a>
+		</script>
+		<script>
+			layui.use('table', function() {
+				var table = layui.table;
+				//监听表格复选框选择
+				table.on('checkbox(demo)', function(obj) {
+					console.log(obj)
+										
+				});
+				//监听工具条
+				table.on('tool(demo)', function(obj) {
+					var data = obj.data;
+					if(obj.event === 'detail') {
+						layer.msg('ID：' + data.id + ' 的查看操作');
+					} else if(obj.event === 'del') {
+						layer.confirm('真的删除行么', function(index) {
+							obj.del();
+							layer.close(index);
+						});
+					} else if(obj.event === 'edit') {
+						layer.open({
+						    type: 1,
+						    shade: false,
+						    title: "编辑", //不显示标题
+						    shade:0.4,
+						    area: ['500px','550px'],
+						    content: $('.edit-gift')
+						});
+						$("#name").val(obj.data.id)
+						$("#number").val(obj.data.username)
+						$("#maxEdition").val(obj.data.sex)
+						$("#demo1").val(obj.data.city)
+					}
+					
+					$("#preservation").click(function(){
+						console.log($(this))
+//						$("").attr('html','obj.data.id')
+						return false
+					})
+				});
+		
+				var $ = layui.$,
+					active = {
+						getCheckData: function() { //获取选中数据
+							var checkStatus = table.checkStatus('idTest'),
+								data = checkStatus.data;
+							layer.alert(JSON.stringify(data));
+						},
+						getCheckLength: function() { //获取选中数目
+							var checkStatus = table.checkStatus('idTest'),
+								data = checkStatus.data;
+							layer.msg('选中了：' + data.length + ' 个');
+						},
+						isAll: function() { //验证是否全选
+							var checkStatus = table.checkStatus('idTest');
+							layer.msg(checkStatus.isAll ? '全选' : '未全选')
+						}
+					};
+		
+				$('.demoTable .layui-btn').on('click', function() {
+					var type = $(this).data('type');
+					active[type] ? active[type].call(this) : '';
+				});
+			});
+			
+			/*上传图片*/
+			layui.use('upload', function() {
+				var $ = layui.jquery,
+					upload = layui.upload;
+	
+				//普通图片上传
+				var uploadInst = upload.render({
+					elem: '#test1',
+					url: '/upload/',
+					before: function(obj) {
+						//预读本地文件示例，不支持ie8
+						obj.preview(function(index, file, result) {
+							$('#demo1').attr('src', result); //图片链接（base64）
+						});
+					},
+					done: function(res) {
+						//如果上传失败
+						if(res.code > 0) {
+							return layer.msg('上传失败');
+						}
+						//上传成功
+					},
+					error: function() {
+						//演示失败状态，并实现重传
+						var demoText = $('#demoText');
+						demoText.html('<span style="color: #FF5722;">上传失败</span> <a class="layui-btn layui-btn-mini demo-reload">重试</a>');
+						demoText.find('.demo-reload').on('click', function() {
+							uploadInst.upload();
+						});
+					}
+					
+				});
+			});
+		</script>
+	</body>
+</html>

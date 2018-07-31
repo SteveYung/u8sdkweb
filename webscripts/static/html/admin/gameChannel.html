@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>游戏渠道包管理</title>
+		<meta charset="UTF-8">
+		<meta content="width=device-width, initial-scale=1.0" name="viewport">
+		<meta content="ie=edge" http-equiv="X-UA-Compatible">
+		<link rel="stylesheet" href="../../../bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="../../../font-awesome/css/font-awesome.min.css" />
+		<link href="../../../layui/css/layui.css" rel="stylesheet">
+		<link rel="stylesheet" href="../../css/base.css" />
+		<link rel="stylesheet" href="../../css/admin.css" />
+	</head>
+
+	<body>
+
+		<div class="channel">
+			<table class="layui-table" lay-data="{ url:'/typesdk/public/jsop/channel.json', page:true, id:'idTest'}" lay-filter="demo">
+				<thead>
+					<tr>
+						<th lay-data="{field:'id', width:150, sort: true, fixed: true}">任务</th>
+						<th lay-data="{field:'username'}">渠道</th>
+						<th lay-data="{field:'sex', sort: true}">版本</th>
+						<th lay-data="{field:'city'}">批号</th>
+						<th lay-data="{field:'city'}">时间</th>
+						<th lay-data="{field:'city'}">创建人</th>
+						<th lay-data="{field:'city', toolbar: '#state'}">状态</th>
+						<th lay-data="{fixed: 'right', width:300, align:'center', toolbar: '#barDemo'}">渠道包操作</th>
+					</tr>
+				</thead>
+			</table>
+			
+			
+		</div><!--channel-->
+		<script src="../../js/jquery-3.1.1.min.js"></script>
+		<script src="../../../layui/layui.js"></script>
+		<script type="text/html" id="state">
+		    <a class="layui-btn layui-btn-xs layui-btn-danger">
+		    	<i class="fa fa-check mr5"></i>通过
+		    </a>
+		    <a class="layui-btn layui-btn-danger layui-btn-xs" > 
+		   	    <i class="fa fa-times mr5"></i>打回
+		    </a>
+		</script>
+		<script type="text/html" id="barDemo">
+		    <a class="layui-btn layui-btn-xs layui-btn-normal">
+		    	<i class="fa fa-arrow-down mr5"></i>下载
+		    </a>
+		</script>
+		<script>
+			layui.use('table', function() {
+				var table = layui.table;
+				//监听表格复选框选择
+				table.on('checkbox(demo)', function(obj) {
+					console.log(obj)
+										
+				});
+		
+				var $ = layui.$,
+					active = {
+						getCheckData: function() { //获取选中数据
+							var checkStatus = table.checkStatus('idTest'),
+								data = checkStatus.data;
+							layer.alert(JSON.stringify(data));
+						},
+						getCheckLength: function() { //获取选中数目
+							var checkStatus = table.checkStatus('idTest'),
+								data = checkStatus.data;
+							layer.msg('选中了：' + data.length + ' 个');
+						},
+						isAll: function() { //验证是否全选
+							var checkStatus = table.checkStatus('idTest');
+							layer.msg(checkStatus.isAll ? '全选' : '未全选')
+						}
+					};
+		
+				$('.demoTable .layui-btn').on('click', function() {
+					var type = $(this).data('type');
+					active[type] ? active[type].call(this) : '';
+				});
+			});
+
+		</script>
+	</body>
+</html>

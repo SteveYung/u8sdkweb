@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<goods>
+    <!-- productID:游戏中商品固定ID -->
+    <!-- billingIndex:计费点索引 -->
+    <!-- repeated:该计费点是否是非强制计费 -->
+    <good productID="1" billingIndex="001" repeated="false"/>   
+    <good productID="2" billingIndex="002" repeated="false"/>     
+</goods>

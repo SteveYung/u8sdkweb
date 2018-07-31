@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>游戏管理</title>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <link href="/css/font-awesome.css" rel="stylesheet">
+    <link href='{{url_for("static", filename="layui/css/layui.css")}}' rel="stylesheet">
+</head>
+<style>
+    .game {
+        width: 98vw;
+    }
+</style>
+
+<body>
+
+    <div class="game">
+        <blockquote class="layui-elem-quote layui-text">
+            游戏的主要信息
+        </blockquote>
+        <table class="layui-table" lay-data="{id:'game',cellMinWidth:100}" lay-filter="game">
+            <thead>
+                <tr>
+                    <th lay-data="{field:'appName', width:100,sort: true, edit: 'text'}">游戏简称</th>
+                    <th lay-data="{field:'appID',width:100,sort: true, edit: 'text'}">游戏ID</th>
+                    <th lay-data="{field:'appKey',width:300, sort: true, edit: 'text'}">appKey</th>
+                    <th lay-data="{field:'appDesc',width:200, edit: 'text'}">游戏中文名</th>
+                    <th lay-data="{field:'versionCode',width:150, edit: 'text'}">游戏包的版本号</th>
+                    <th lay-data="{field:'versionName',width:200, edit: 'text'}">游戏包中的版本名称</th>
+                    <th lay-data="{fixed: 'right', width:300,align:'center', toolbar: '#barDemo'}">操作</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+    <!--channel-->
+    <script src='{{url_for("static", filename="js/jquery-3.1.1.min.js")}}' charset="utf-8"></script>
+    <script src='{{url_for("static", filename="layui/layui.js")}}' charset="utf-8"></script>
+    <script type="text/html" id="barDemo">
+        <a class="layui-btn layui-btn-xs" lay-event="edit">
+            <i class="fa fa-edit mr5"></i>更新
+        </a>
+        <a class="layui-btn layui-btn-primary layui-btn-xs" lay-event="detail">
+            <i class="fa fa-hand-paper-o mr5"></i>接入渠道
+        </a>
+    </script>
+
+    <script>
+        layui.use('table', function() {
+            var table = layui.table;
+            //执行重载
+            table.reload('game', {
+                url: '/gameData',
+                page: {
+                    curr: 1 //重新从第 1 页开始
+                }
+            });
+            //监听工具条
+            table.on('tool(game)', function(obj) {
+                var data = obj.data,
+                    dataa = {
+                        appName: data.appName,
+                        appID: data.appID,
+                        appKey: data.appKey,
+                        appDesc: data.appDesc,
+                        versionCode: data.versionCode,
+                        versionName: data.versionName,
+                        sign: data.sign
+                    };
+                if (obj.event === 'detail') {
+                    window.location.href = '/channeladmin?game=' + obj.data.appName;
+                } else if (obj.event === 'edit') {
+                    (dataa.appName) ? updata_post(dataa, 'gameDataEdit'): layer.msg('这个游戏名字都没有？');
+                } else if (obj.event === 'upup') {
+                    (dataa.appName) ? updata_post(dataa, 'gameDataFound'): layer.msg('这个游戏名字都没有？');
+                }
+            });
+        });
+        setTimeout(function() {
+            //加载完成后就显示添加栏目
+            buttonup('game');
+        }, 2000)
+
+        function updata_post(dataa, uurl) {
+            $.post("/" + uurl, dataa,
+                function(data, status) {
+                    if (data == 'True' && status == 'success') {
+                        window.location.reload()             
+                    } else {
+                        layer.msg(data);
+                    }
+                });
+        }
+
+        function buttonup(uploadtt) {
+            var oBtn = document.querySelectorAll('.' + uploadtt + ' .layui-form .layui-table-box .layui-table-body .layui-table tbody tr');
+            var htmla = '<td data-field="appName" data-edit="text"><div class="layui-table-cell laytable-cell-2-appName"></div></td><td data-field="appID" data-edit="text"><div class="layui-table-cell laytable-cell-2-appID"></div></td><td data-field="appKey" data-edit="text"><div class="layui-table-cell laytable-cell-2-appKey"></div></td><td data-field="appDesc" data-edit="text"><div class="layui-table-cell laytable-cell-2-appDesc"></div></td><td data-field="versionCode" data-edit="text"><div class="layui-table-cell laytable-cell-2-versionCode"></div></td><td data-field="versionName" data-edit="text"><div class="layui-table-cell laytable-cell-2-versionName"></div></td><td data-field="6" align="center" data-off="true"><div class="layui-table-cell laytable-cell-2-6"><a class="layui-btn layui-btn-xs" lay-event="upup"><i class="fa fa-edit mr5"></i>游戏数据添加 </a></div></td>';
+            oBtn[((oBtn.length) / 2) - 1].innerHTML = htmla
+        }
+    </script>
+</body>
+
+</html>
+
+<!-- 
+
+
+ -->

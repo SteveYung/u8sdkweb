@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    
+    <params>
+		
+    </params>
+    
+    <operations>
+        <operation step="1" type="mergeManifest" from="SDKManifest.xml" to="AndroidManifest.xml" />
+        <operation step="2" type="copyRes" from="assets" to="assets" />
+        <operation step="3" type="copyRes" from="libs" to="lib" />
+        <operation step="4" type="copyRes" from="res" to="res" />
+        <operation step="5" type="copyRes" from="root" to="" />
+    </operations>
+    
+    <plugins>
+        <plugin name="com.u8.sdk.BaiduUser" type="1" desc="用户登录接口"/>
+        <plugin name="com.u8.sdk.BaiduPay" type="2" desc="用户支付接口"/>
+    </plugins>
+    
+    <version>
+        <versionCode>1</versionCode>
+        <versionName>3.7.4</versionName>
+    </version>    
+    
+</config>

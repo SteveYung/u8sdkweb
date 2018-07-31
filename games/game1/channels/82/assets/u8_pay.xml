@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<goods>
+    <!-- productID:游戏中商品固定ID -->
+    <!-- payCode:计费点别名 -->
+    <good productID="1" payCode="108462" />   
+    <good productID="2" payCode="108463" />     
+</goods>

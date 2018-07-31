@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    
+    <subplugins>
+        <subplugin name="Wechat" showName="微信">
+            <param name="SortId" value="1" desc="此平台在您分享列表中的位置，整型，数值越大越靠后" showName="SortId" bWriteInManifest="0" bWriteInClient="0"/>
+            <param name="AppId" value="wx4868b35061f87885" desc="填写您在微信上注册到的AppId" showName="AppId" bWriteInManifest="0" bWriteInClient="0"/>  
+            <param name="AppSecret" value="64020361b8ec4c99936c0e3999a9f249" desc="填写您在微信上注册到的AppSecret" showName="AppSecret" bWriteInManifest="0" bWriteInClient="0"/>
+            <param name="BypassApproval" value="false" desc="BypassApproval是绕过审核的标记，设置为true后AppId将被忽略，故不经过审核的应用也可以执行分享" showName="BypassApproval" bWriteInManifest="0" bWriteInClient="0"/>                            
+        </subplugin>
+        <subplugin name="WechatMoments" showName="微信朋友圈">
+            <param name="SortId" value="2" desc="此平台在您分享列表中的位置，整型，数值越大越靠后" showName="SortId" bWriteInManifest="0" bWriteInClient="0"/>
+            <param name="AppId" value="wx4868b35061f87885" desc="填写您在微信上注册到的AppId" showName="AppId" bWriteInManifest="0" bWriteInClient="0"/>  
+            <param name="AppSecret" value="64020361b8ec4c99936c0e3999a9f249" desc="填写您在微信上注册到的AppSecret" showName="AppSecret" bWriteInManifest="0" bWriteInClient="0"/>
+            <param name="BypassApproval" value="false" desc="BypassApproval是绕过审核的标记，设置为true后AppId将被忽略，故不经过审核的应用也可以执行分享" showName="BypassApproval" bWriteInManifest="0" bWriteInClient="0"/>                            
+        </subplugin>                           
+    </subplugins>
+    <params>
+        <param name="AppKey" value="androidv1101" desc="友盟分享的appkey" showName="AppKey" bWriteIntoManifest="0" bWriteIntoClient="0" />
+    </params>
+    
+    <operations>
+        <operation step="1" type="mergeManifest" from="SDKManifest.xml" to="AndroidManifest.xml" />
+        <operation step="2" type="copyRes" from="assets" to="assets" />
+        <operation step="3" type="copyRes" from="libs" to="lib" />
+        <operation step="4" type="copyRes" from="res" to="res" />
+        <operation step="5" type="script" from="script.py"/>
+    </operations>
+    
+    <plugins>
+        <plugin name="com.u8.sdk.UMengShare" type="4" desc="友盟分享接口"/>
+    </plugins>
+
+    <version>
+        <versionCode>1</versionCode>
+        <versionName>4.3.0</versionName>
+    </version>    
+    
+</config>

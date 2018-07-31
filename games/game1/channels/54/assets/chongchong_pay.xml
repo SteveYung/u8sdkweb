@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<goods>
+    <!-- productID:游戏中商品固定ID -->
+    <!-- waresid:在虫虫后台中配置的计费点的商品ID -->
+    <good productID="1" waresid="111215" />   
+    <good productID="2" waresid="111214" />
+    <good productID="3" waresid="111213" />    
+    <good productID="4" waresid="111212" />    
+    <good productID="5" waresid="111211" />    
+    <good productID="6" waresid="111210" />
+    <good productID="7" waresid="111209" />    
+    <good productID="8" waresid="111208" />
+    <good productID="9" waresid="111207" />      
+</goods>
